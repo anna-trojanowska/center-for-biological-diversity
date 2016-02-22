@@ -1,6 +1,6 @@
 /*=====TYPOGRAPHY STYLING=====*/
 html {
-  font: normal 100%/1.5 Georgia, serif;
+  font: normal 100%/1.5 "Roboto", sans-serif;
 }
 
 @media only screen and (min-width: 60em) {
@@ -48,22 +48,28 @@ h1, .exa {
     font-size: 1.8020rem;
     line-height: 1.6648;
     text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 h2, .peta {
     font-size: 1.6018rem;
     line-height: 1.8729;
     text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 h3, .tera {
-  font-size: 1.4238rem;
-  line-height: 1.0535;
+    font-size: 1.4238rem;
+    line-height: 1.0535;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 h4, .giga {
-  font-size: 1.2656rem;
-  line-height: 1.1852;
+    font-size: 1.2656rem;
+    line-height: 1.1852;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 h5, .mega {

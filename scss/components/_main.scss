@@ -26,12 +26,19 @@ body{
   @include zero;
 }
 
+.img-flex {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
 // ---------- FOOTER
 
 footer {
     background-color: $black;
     color: $white;
     text-align: center;
+    padding: 2em;
 
   a{
     text-decoration: none;
@@ -40,46 +47,83 @@ footer {
     }
   }
 }
+.footer-donate {
+    padding: 1em;
+}
+
+.footer-contact {
+    padding: 1em;
+    border-top: solid $white;
+    border-bottom: solid $white;
+    z-index: 100;
+}
+
+.footer-join {
+    padding: 1em;
+}
+    
 
 .btn-social {
     background-color: $white;
     text-decoration: none;
-    padding: 1em;
-    border-radius: 100%;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-top: 0.6em;
+    padding-bottom: 0.4em;
+    border-radius: 50%;
     display: inline-block;
     margin: 0.5em;
 }
 
 .btn-social:hover,
 .btn-social:active,
-.btnsocial:focus {
-    background-color: darken($white,10%); ;
-}
-
-.btn i {
-    vertical-align: middle;
-    font-size: 2em;
-    color: #505050;   
+.btn-social:focus {
+    background-color: darken($white,20%); ;
 }
 
 .btn-social i {
     vertical-align: middle;
-    font-size: 2em;
+    font-size: 1em;
     color: $black;    
-    
+}
+
+.btn-donate {
+    @include btn-donate;
 }
     
+.banner {
+    margin-bottom: 4em;
+}
+
+.btn-updates {
+    @include btn-updates;
+}
 
 .copyright{
-  text-align: center;
-  margin: 0;
-  padding-bottom: 2em;
+    padding-top: 4em;
+    text-align: center;
+    font-size: 0.6em;
+    margin: 0;
+    
 }
+
+input[type="submit"]{
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 0;
+}
+
 
 // ---------- TABLET PORTRAIT
 @media only screen and (min-width: 768px) {
+    .footer-contact{
+        border: 0;
+            border-left: solid $white;
+        border-right: solid $white;
+    }
 }
 
 // ---------- TABLET LANDSCAPE + DESKTOP
 @media only screen and (min-width: 960px) {
+
 }
