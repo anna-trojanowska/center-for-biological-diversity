@@ -1,0 +1,71 @@
+header{
+	position: relative;
+	padding: 0 0 8em;
+	h1{
+		z-index: 100;
+		text-align: center;
+		font-size: 5vw;
+		color: $white;
+	}
+}
+
+.navigation{
+	top: -2em;
+	z-index: 1000;
+	position: absolute;
+	right: 4em;
+	ul{
+		color: $medium-green;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		position: relative;
+		display: inline-block;
+		a{
+			display: block;
+			color: $medium-green;
+			text-decoration: none;
+			padding: 1em;
+			&:hover{
+				color: lighten($medium-green,10%);
+			}
+		}
+
+		
+			}
+}
+
+.logo{
+	margin-top: 2em;
+	a{
+		img{
+			margin: 2em;
+			max-width: 5em;
+		}
+	}
+}
+
+
+
+.donate-now{
+	text-decoration:none;
+	color: $white;
+	display: block;
+	margin: 0 auto;
+	max-width: calc(30em + 20px);
+	background-color: $orange;
+	overflow: hidden;
+	h2{
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		width: calc(40% - 2em);
+		margin: 1em 0 1em 1em;
+		padding-right: 1em;
+		font-size: 1.25em;
+		line-height: 1.25em;;
+		float: left;
+	}
+}

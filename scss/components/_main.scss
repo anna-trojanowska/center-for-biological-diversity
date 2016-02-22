@@ -1,0 +1,85 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+body{
+  font-family: "Roboto";
+  @include zero;
+}
+
+// ---------- FOOTER
+
+footer {
+    background-color: $black;
+    color: $white;
+    text-align: center;
+
+  a{
+    text-decoration: none;
+    &:visited{
+      color: $white;
+    }
+  }
+}
+
+.btn-social {
+    background-color: $white;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.btn-social:hover,
+.btn-social:active,
+.btnsocial:focus {
+    background-color: darken($white,10%); ;
+}
+
+.btn i {
+    vertical-align: middle;
+    font-size: 2em;
+    color: #505050;   
+}
+
+.btn-social i {
+    vertical-align: middle;
+    font-size: 2em;
+    color: $black;    
+    
+}
+    
+
+.copyright{
+  text-align: center;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+// ---------- TABLET PORTRAIT
+@media only screen and (min-width: 768px) {
+}
+
+// ---------- TABLET LANDSCAPE + DESKTOP
+@media only screen and (min-width: 960px) {
+}

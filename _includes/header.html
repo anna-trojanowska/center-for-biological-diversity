@@ -1,0 +1,19 @@
+<header>
+    
+    <div class="nav-wrapper" role="navigation">
+        
+        <a href="{{site.baseurl}}/"><img class="logo" src="{{site.baseurl}}/images/logo-colour.svg" alt="CBD Logo"></a>
+        
+        <nav role="navigation">
+            <ul>
+                <li class="nav-link"><a href="{{site.baseurl}}/about" class="{% if page.url == '/about/' %}current{% endif %}">About</a></li>
+                <li class="nav-link"><a href="{{site.baseurl}}/action" class="{% if page.url == '/action/' %}current{% endif %}">Action</a></li>
+                <li class="nav-link"><a href="{{site.baseurl}}/news" class="{% if page.url == '/news/' %}current{% endif %}">News</a></li>
+                <li class="nav-link"><a href="{{site.baseurl}}/species" class="{% if page.url == '/species/' %}current{% endif %}">Species</a></li>
+            </ul>
+        </nav>
+        
+        <a class="btn-donate" href="#"><h2>Donate</h2></a>
+    </div>
+
+</header>
