@@ -22,12 +22,18 @@ input[type="checkbox"]{
     display: none;
 }
 
-
+header .btn-donate {
+    position: absolute; 
+}
 
 
 
 // ---------- TABLET LANDSCAPE + DESKTOP
 @media only screen and (min-width: 700px) {
+    header .btn-donate {
+     position: relative; 
+    }
+
     header {
 	position: relative;
 	padding: 0;
@@ -78,10 +84,6 @@ input[type="checkbox"]{
                 }
             }
 
-        }
-
-        .btn-donate {
-            @include btn-donate;
         }
         label {
             display: none;
