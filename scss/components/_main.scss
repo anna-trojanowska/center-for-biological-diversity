@@ -104,6 +104,7 @@ footer {
     text-align: center;
     font-size: 0.6em;
     margin: 0;
+    letter-spacing: 0.2em;
     
 }
 
@@ -113,13 +114,44 @@ input[type="submit"]{
     border: 0;
 }
 
+input[type="email"]{
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 0;
+    width: 198px;
+    height: 3em;
+}
+
+input[placeholder="Enter Your Email"]{
+    padding-left: 0.8em;
+    display: block;
+    margin: 1em auto;
+    box-sizing: border-box;
+}
+
+
+
+
 
 // ---------- TABLET PORTRAIT
-@media only screen and (min-width: 768px) {
+  
+@media only screen and (min-width: 700px) {
+    .social-media {
+        margin-right: 10em;
+        margin-left: 10em;
+    }
+}
+
+@media only screen and (min-width: 958px) {
     .footer-contact{
         border: 0;
-            border-left: solid $white;
+        border-left: solid $white;
         border-right: solid $white;
+    }
+    
+    .social-media {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
