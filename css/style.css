@@ -5,7 +5,7 @@
 .grid {
   margin: 0;
   padding: 0;
-  letter-spacing: -0.31em;
+  /* letter-spacing: -0.31em; */
   text-rendering: optimizespeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -781,7 +781,12 @@ sub {
 .navigation i {
   color: #608a3c;
   font-size: 3em;
-  margin: 1em;
+  margin-top: 4em;
+  margin-left: 1em;
+}
+
+.navigation i .icon-menu {
+  margin-top: 2em;
 }
 
 input[type="checkbox"] {
@@ -790,6 +795,10 @@ input[type="checkbox"] {
 
 header .btn-donate {
   position: absolute;
+}
+
+.icon-menu {
+  margin-top: 2em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -809,7 +818,7 @@ header .btn-donate {
   .nav-wrapper {
     height: 4.9em;
     position: relative;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   .navigation {
@@ -904,6 +913,57 @@ body {
   margin: 0 auto;
 }
 
+.elephant {
+  display: block;
+  width: 280%;
+  margin-left: -22em;
+  margin-top: -1.05em;
+  z-index: 0;
+}
+
+.icon-logo {
+  z-index: 1000;
+  font-size: 20em;
+  color: #FFFFFF;
+  display: block;
+}
+
+@media only screen and (min-width: 540px) {
+  .elephant {
+    display: block;
+    width: 280%;
+    margin-left: -30em;
+    margin-top: -1.05em;
+  }
+}
+
+.about-the-center {
+  background-color: #FFFFFF;
+}
+
+.about-the-center-content {
+  margin: 1em;
+  background-color: #FFFFFF;
+}
+
+.breaking-news {
+  background-color: #9e1c39;
+}
+
+.breaking-news-content {
+  color: #FFFFFF;
+  margin: 1em;
+}
+
+.take-action {
+  background-color: #c15027;
+}
+
+.take-action-content {
+  margin: 1em;
+  color: #FFFFFF;
+}
+
 footer {
   background-color: #333;
   color: #FFFFFF;
@@ -975,10 +1035,6 @@ footer a:visited {
   background-color: #af5517;
 }
 
-.banner {
-  margin-bottom: 4em;
-}
-
 .btn-updates {
   display: inline-block;
   background-color: #608a3c;
@@ -1030,9 +1086,14 @@ input[placeholder="Enter Your Email"] {
     margin-right: 10em;
     margin-left: 10em;
   }
+  .elephant {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-@media only screen and (min-width: 958px) {
+@media only screen and (min-width: 960px) {
   .footer-contact {
     border: 0;
     border-left: solid #FFFFFF;

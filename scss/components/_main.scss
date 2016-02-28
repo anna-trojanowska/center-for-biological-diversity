@@ -32,6 +32,66 @@ body{
     margin: 0 auto;
 }
 
+// ---------- BANNER
+
+.banner {
+    background-image:
+}
+
+.elephant {
+    display: block;
+    width: 280%;
+    margin-left: -22em;
+    margin-top: -1.05em;
+    z-index: 0;
+}
+
+.icon-logo {
+    z-index: 1000;
+    font-size: 20em;
+    color: $white;
+    display: block;
+}
+
+@media only screen and (min-width: 540px) {
+    .elephant {
+        display: block;
+        width: 280%;
+        margin-left: -30em;
+        margin-top: -1.05em;   
+    }
+}
+
+// ---------HOME PAGE
+.about-the-center {
+    background-color: $white;
+}
+
+.about-the-center-content {
+    margin: 1em;
+    background-color: $white;
+}
+
+.breaking-news {
+    background-color: $dark-red;
+}
+
+.breaking-news-content {
+    color: $white;
+    margin: 1em;
+}
+
+.take-action {
+    background-color: $dark-orange;
+}
+
+.take-action-content {
+    margin: 1em;
+    color: $white;
+}
+
+
+
 // ---------- FOOTER
 
 footer {
@@ -61,7 +121,6 @@ footer {
 .footer-join {
     padding: 1em;
 }
-    
 
 .btn-social {
     background-color: $white;
@@ -91,10 +150,6 @@ footer {
     @include btn-donate;
 }
     
-.banner {
-    margin-bottom: 4em;
-}
-
 .btn-updates {
     @include btn-updates;
 }
@@ -140,9 +195,17 @@ input[placeholder="Enter Your Email"]{
         margin-right: 10em;
         margin-left: 10em;
     }
+    
+    .elephant {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
-@media only screen and (min-width: 958px) {
+
+// ---------- TABLET LANDSCAPE + DESKTOP
+@media only screen and (min-width: 960px) {
     .footer-contact{
         border: 0;
         border-left: solid $white;
@@ -153,9 +216,4 @@ input[placeholder="Enter Your Email"]{
         margin-left: 0;
         margin-right: 0;
     }
-}
-
-// ---------- TABLET LANDSCAPE + DESKTOP
-@media only screen and (min-width: 960px) {
-
 }
