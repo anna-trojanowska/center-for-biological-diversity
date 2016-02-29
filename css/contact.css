@@ -1,0 +1,39 @@
+.banner-contact img{
+	width: 100%;
+	margin-top: 0;
+}
+
+
+.banner-contact-top{
+	position: absolute;
+	width: 20em;
+	margin-left: 1.2em;
+	margin-top: 2em; 
+	color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1250px) {
+	.banner-contact-top{
+	margin-left: 5%;
+}
+}
+.banner-contact-top p{
+	margin-top: -1em; 
+}
+
+.contact{
+	margin-left: 1em;
+	margin-top: 1em;
+	clear:both;
+	background-color: #80a143;
+}
+
+.contact-inside{
+	margin-top: 1em;
+	width: 100%;
+}
+@media only screen and (min-width: 960px) {
+	.contact-inside{
+		width: 50%;
+	}
+}

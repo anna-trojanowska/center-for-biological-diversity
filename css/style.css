@@ -12,30 +12,25 @@
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .grid-bottom {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  align-items: flex-end;
 }
 
 .grid-middle {
   -webkit-align-items: center;
   -ms-align-items: center;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
-  -ms-flex-align: stretch;
-      align-items: stretch;
+  align-items: stretch;
 }
 
 .opera-only :-o-prefocus, .grid {
@@ -537,8 +532,7 @@
 .content-fill {
   -ms-flex-grow: 2;
   -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-      flex-grow: 2;
+  flex-grow: 2;
   max-width: 100%;
   /* @bugfix: IE 10, 11 */
 }
@@ -546,8 +540,7 @@
 .content-shrink {
   -ms-align-self: center;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  align-self: center;
 }
 
 /*=====TYPOGRAPHY STYLING=====*/
@@ -874,6 +867,11 @@ input[type="checkbox"] {
   scale: 1;
 }
 
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+
 @-webkit-viewport {
   width: device-width;
   scale: 1;
@@ -887,6 +885,7 @@ input[type="checkbox"] {
 html {
   overflow-x: hidden;
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -1051,5 +1050,3 @@ input[placeholder="Enter Your Email"] {
     margin-right: 0;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
