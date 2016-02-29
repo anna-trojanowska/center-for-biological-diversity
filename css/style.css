@@ -913,28 +913,106 @@ body {
   margin: 0 auto;
 }
 
-.elephant {
+.banner {
+  background-image: url(../images/african-elephant.jpeg);
   display: block;
-  width: 280%;
-  margin-left: -22em;
-  margin-top: -1.05em;
+  width: 100%;
+  height: 60em;
   z-index: 0;
+}
+
+.banner-content {
+  margin: 1em;
+}
+
+.banner-text {
+  color: #FFFFFF;
+}
+
+.btn-take-action {
+  display: inline-block;
+  background-color: #ca203f;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-take-action:hover, .btn-take-action:active, .btn-take-action:focus {
+  background-color: #88162a;
 }
 
 .icon-logo {
   z-index: 1000;
-  font-size: 20em;
   color: #FFFFFF;
   display: block;
 }
 
-@media only screen and (min-width: 540px) {
-  .elephant {
-    display: block;
-    width: 280%;
-    margin-left: -30em;
-    margin-top: -1.05em;
-  }
+.btn-learn-more {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-learn-more:hover, .btn-learn-more:active, .btn-learn-more:focus {
+  background-color: #0d0d0d;
+}
+
+.btn-join-us {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-join-us:hover, .btn-join-us:active, .btn-join-us:focus {
+  background-color: #0d0d0d;
+}
+
+.btn-sign-petition {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-sign-petition:hover, .btn-sign-petition:active, .btn-sign-petition:focus {
+  background-color: #0d0d0d;
+}
+
+.press {
+  color: #FFFFFF;
+}
+
+.press:hover {
+  color: #cccccc;
+}
+
+.in-the-spotlight {
+  margin: 1em;
 }
 
 .about-the-center {
@@ -947,7 +1025,7 @@ body {
 }
 
 .breaking-news {
-  background-color: #9e1c39;
+  background-color: #08626b;
 }
 
 .breaking-news-content {
@@ -956,7 +1034,7 @@ body {
 }
 
 .take-action {
-  background-color: #c15027;
+  background-color: #4a6830;
 }
 
 .take-action-content {
