@@ -1094,11 +1094,13 @@ main {
 
 .contact-inside {
   display: inline-block;
+  float: left;
   margin-left: 1.2em;
 }
 
 .contact-inside-right {
   display: inline-block;
+  float: right;
   margin-left: 1.2em;
 }
 
