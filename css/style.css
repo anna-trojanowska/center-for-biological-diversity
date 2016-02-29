@@ -1050,3 +1050,68 @@ input[placeholder="Enter Your Email"] {
     margin-right: 0;
   }
 }
+
+main {
+  min-width: 360px;
+}
+
+.banner-contact img {
+  width: 100%;
+  margin-top: 0;
+}
+
+.banner-contact-top {
+  position: absolute;
+  width: 10em;
+  margin-left: 1.2em;
+  margin-top: 2em;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 700px) {
+  .banner-contact-top {
+    width: 20em;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .banner-contact-top {
+    margin-left: 5%;
+  }
+}
+
+.banner-contact-top p {
+  margin-top: -1em;
+}
+
+.contact {
+  height: 95em;
+  clear: both;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.contact-inside {
+  display: inline-block;
+  margin-left: 1.2em;
+}
+
+.contact-inside-right {
+  display: inline-block;
+  margin-left: 1.2em;
+}
+
+@media only screen and (min-width: 960px) {
+  .contact {
+    height: 55em;
+  }
+  .contact-inside {
+    width: 45%;
+  }
+  .contact-inside-right {
+    margin-left: 1.2em;
+    float: left;
+    width: 45%;
+  }
+}

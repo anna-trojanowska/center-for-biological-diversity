@@ -1,3 +1,7 @@
+main{
+	min-width:360px;
+}
+
 .banner-contact img{
 	width: 100%;
 	margin-top: 0;
@@ -6,10 +10,17 @@
 
 .banner-contact-top{
 	position: absolute;
-	width: 20em;
+	width: 10em;
 	margin-left: 1.2em;
 	margin-top: 2em; 
 	color: $white;
+}
+
+@media only screen and (min-width: 700px) {
+	.banner-contact-top{
+	width: 20em;
+	margin-left: 5%;
+}
 }
 
 @media only screen and (min-width: 1250px) {
