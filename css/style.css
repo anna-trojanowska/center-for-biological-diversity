@@ -599,7 +599,7 @@ h1, .exa {
 
 h2, .peta {
   font-size: 1.6018rem;
-  line-height: 1.8729;
+  line-height: 1.2;
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -793,6 +793,23 @@ input[type="checkbox"] {
   display: none;
 }
 
+.btn-donate {
+  display: inline-block;
+  background-color: #e4792e;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.btn-donate:hover, .btn-donate:active, .btn-donate:focus {
+  background-color: #af5517;
+}
+
 header .btn-donate {
   position: absolute;
 }
@@ -913,20 +930,13 @@ body {
   margin: 0 auto;
 }
 
-.banner {
-  background-image: url(../images/african-elephant.jpeg);
-  display: block;
-  width: 100%;
-  height: 60em;
-  z-index: 0;
-}
-
 .banner-content {
-  margin: 1em;
+  position: absolute;
 }
 
 .banner-text {
   color: #FFFFFF;
+  text-align: center;
 }
 
 .btn-take-action {
@@ -950,6 +960,117 @@ body {
   z-index: 1000;
   color: #FFFFFF;
   display: block;
+  position: absolute;
+  height: 5em;
+}
+
+@media only screen and (min-width: 540px) {
+  .banner-content {
+    position: absolute;
+  }
+  .banner-text {
+    text-align: left;
+  }
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover,
+.carousel-control:focus,
+.carousel-control:active {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5,
+#carousel-6:checked ~ .control-6 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-size: 30px;
+}
+
+.carousel-bullet:hover,
+.carousel-bullet:focus,
+.carousel-bullet:active {
+  color: #d9d9d9;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
+  color: #608a3c;
 }
 
 .btn-learn-more {
@@ -1003,6 +1124,68 @@ body {
   background-color: #0d0d0d;
 }
 
+.btn-read-more {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-read-more:hover, .btn-read-more:active, .btn-read-more:focus {
+  background-color: #0d0d0d;
+}
+
+.btn-watch-more {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-watch-more:hover, .btn-watch-more:active, .btn-watch-more:focus {
+  background-color: #0d0d0d;
+}
+
+.btn-listen {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-listen:hover, .btn-listen:active, .btn-listen:focus {
+  background-color: #0d0d0d;
+}
+
+.icon-icon {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.2em;
+  font-size: 5em;
+  color: #333;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
 .press {
   color: #FFFFFF;
 }
@@ -1024,6 +1207,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.about-buttons {
+  margin: 1em;
+}
+
 .breaking-news {
   background-color: #08626b;
 }
@@ -1040,6 +1227,40 @@ body {
 .take-action-content {
   margin: 1em;
   color: #FFFFFF;
+}
+
+.brief {
+  background-color: #9e1c39;
+}
+
+.brief-content {
+  color: #FFFFFF;
+  margin: 1em;
+}
+
+.ringtones {
+  background-color: #c15027;
+}
+
+.ringtones-content {
+  color: #FFFFFF;
+  margin: 1em;
+}
+
+.videos {
+  background-color: #9e1c39;
+}
+
+.videos-content {
+  color: #FFFFFF;
+  margin: 1em;
+}
+
+.spotlight {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1.4em;
 }
 
 footer {
@@ -1103,8 +1324,8 @@ footer a:visited {
   color: #FFFFFF;
   top: 0;
   right: 0;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
@@ -1120,8 +1341,8 @@ footer a:visited {
   color: #FFFFFF;
   top: 0;
   right: 0;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -1163,11 +1384,6 @@ input[placeholder="Enter Your Email"] {
   .social-media {
     margin-right: 10em;
     margin-left: 10em;
-  }
-  .elephant {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
   }
 }
 
