@@ -5,8 +5,8 @@
     color: $white;
     top: 0;
     right: 0;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 1.5em;
     padding-right: 1.5em;
     &:hover,
@@ -23,14 +23,140 @@
     color: $white;
     top: 0;
     right: 0;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
     &:hover,
     &:active,
     &:focus {
         background-color: darken($medium-green,15%); ;
+    }
+}
+
+@mixin btn-learn-more {
+    display: inline-block;
+    background-color: $black;
+    text-decoration: none;
+    color: $white;
+    top: 0;
+    right: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($black,15%); ;
+    }
+}
+
+@mixin btn-read-more {
+    display: inline-block;
+    background-color: $black;
+    text-decoration: none;
+    color: $white;
+    top: 0;
+    right: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($black,15%); ;
+    }
+}
+
+@mixin btn-join-us {
+    display: inline-block;
+    background-color: $black;
+    text-decoration: none;
+    color: $white;
+    top: 0;
+    right: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($black,15%); ;
+    }
+}
+
+@mixin btn-sign-petition {
+    display: inline-block;
+    background-color: $black;
+    text-decoration: none;
+    color: $white;
+    top: 0;
+    right: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($black,15%); ;
+    }
+}
+
+@mixin btn-listen {
+    display: inline-block;
+    background-color: $black;
+    text-decoration: none;
+    color: $white;
+    top: 0;
+    right: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($black,15%); ;
+    }
+}
+
+@mixin btn-watch-more {
+    display: inline-block;
+    background-color: $black;
+    text-decoration: none;
+    color: $white;
+    top: 0;
+    right: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($black,15%); ;
+    }
+}
+
+@mixin btn-take-action {
+    display: inline-block;
+    background-color: $red;
+    text-decoration: none;
+    color: $white;
+    top: 0;
+    right: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($red,15%); ;
     }
 }
 
