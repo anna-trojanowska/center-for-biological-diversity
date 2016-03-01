@@ -57,7 +57,7 @@ body{
     z-index: 1000;
     color: $white;
     display: block;
-    position: absolute;
+    position: relative;
     height: 5em;
 }
 
@@ -72,6 +72,13 @@ body{
 }
 
 // ------- CAROUSEL
+
+.carousel i {
+    z-index: 1000;
+    color: $black;
+    display: block;
+    position: absolute;
+}
 
 .carousel-inner {
     position: relative;
@@ -172,6 +179,10 @@ body{
 }
 
 // ---------HOME PAGE
+
+.circle-image {
+    border-radius: 50%;
+}
 
 .btn-learn-more {
     @include btn-learn-more;

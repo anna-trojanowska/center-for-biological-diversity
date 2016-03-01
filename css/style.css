@@ -930,6 +930,12 @@ body {
   margin: 0 auto;
 }
 
+.media {
+  width: 400px;
+  height: 400px;
+  padding: 5em;
+}
+
 .banner-content {
   position: absolute;
 }
@@ -960,7 +966,7 @@ body {
   z-index: 1000;
   color: #FFFFFF;
   display: block;
-  position: absolute;
+  position: relative;
   height: 5em;
 }
 
@@ -971,6 +977,13 @@ body {
   .banner-text {
     text-align: left;
   }
+}
+
+.carousel i {
+  z-index: 1000;
+  color: #333;
+  display: block;
+  position: absolute;
 }
 
 .carousel-inner {
@@ -1071,6 +1084,10 @@ body {
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
 #carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
   color: #608a3c;
+}
+
+.circle-image {
+  border-radius: 50%;
 }
 
 .btn-learn-more {
@@ -1284,8 +1301,8 @@ footer a:visited {
 
 .footer-contact {
   padding: 1em;
-  border-top: solid #FFFFFF;
-  border-bottom: solid #FFFFFF;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
   z-index: 100;
 }
 
@@ -1426,3 +1443,5 @@ input[placeholder="Enter Your Email"] {
      -moz-column-gap: 40px;
           column-gap: 40px;
 }
+
+/*# sourceMappingURL=style.css.map */
