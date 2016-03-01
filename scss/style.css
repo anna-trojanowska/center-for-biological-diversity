@@ -814,8 +814,8 @@ footer {
 
 .footer-contact {
   padding: 1em;
-  border-top: solid #FFFFFF;
-  border-bottom: solid #FFFFFF;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
   z-index: 100; }
 
 .footer-join {
