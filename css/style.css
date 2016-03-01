@@ -5,7 +5,7 @@
 .grid {
   margin: 0;
   padding: 0;
-  letter-spacing: -0.31em;
+  /* letter-spacing: -0.31em; */
   text-rendering: optimizespeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -774,14 +774,30 @@ sub {
 .navigation i {
   color: #608a3c;
   font-size: 3em;
-  margin: 1em;
+  margin-top: 4em;
+  margin-left: 1em;
+}
+
+.navigation i .icon-menu {
+  margin-top: 2em;
 }
 
 input[type="checkbox"] {
   display: none;
 }
 
+header .btn-donate {
+  position: absolute;
+}
+
+.icon-menu {
+  margin-top: 2em;
+}
+
 @media only screen and (min-width: 700px) {
+  header .btn-donate {
+    position: relative;
+  }
   header {
     position: relative;
     padding: 0;
@@ -795,7 +811,7 @@ input[type="checkbox"] {
   .nav-wrapper {
     height: 4.9em;
     position: relative;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   .navigation {
@@ -830,21 +846,6 @@ input[type="checkbox"] {
   }
   .navigation li a:hover {
     color: #638b40;
-  }
-  .navigation .btn-donate {
-    display: inline-block;
-    background-color: #e4792e;
-    text-decoration: none;
-    color: #FFFFFF;
-    top: 0;
-    right: 0;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-  .navigation .btn-donate:hover, .navigation .btn-donate:active, .navigation .btn-donate:focus {
-    background-color: #af5517;
   }
   .navigation label {
     display: none;
@@ -909,6 +910,135 @@ body {
   display: block;
   width: 100%;
   margin: 0 auto;
+}
+
+.banner {
+  background-image: url(../images/african-elephant.jpeg);
+  display: block;
+  width: 100%;
+  height: 60em;
+  z-index: 0;
+}
+
+.banner-content {
+  margin: 1em;
+}
+
+.banner-text {
+  color: #FFFFFF;
+}
+
+.btn-take-action {
+  display: inline-block;
+  background-color: #ca203f;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-take-action:hover, .btn-take-action:active, .btn-take-action:focus {
+  background-color: #88162a;
+}
+
+.icon-logo {
+  z-index: 1000;
+  color: #FFFFFF;
+  display: block;
+}
+
+.btn-learn-more {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-learn-more:hover, .btn-learn-more:active, .btn-learn-more:focus {
+  background-color: #0d0d0d;
+}
+
+.btn-join-us {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-join-us:hover, .btn-join-us:active, .btn-join-us:focus {
+  background-color: #0d0d0d;
+}
+
+.btn-sign-petition {
+  display: inline-block;
+  background-color: #333;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.btn-sign-petition:hover, .btn-sign-petition:active, .btn-sign-petition:focus {
+  background-color: #0d0d0d;
+}
+
+.press {
+  color: #FFFFFF;
+}
+
+.press:hover {
+  color: #cccccc;
+}
+
+.in-the-spotlight {
+  margin: 1em;
+}
+
+.about-the-center {
+  background-color: #FFFFFF;
+}
+
+.about-the-center-content {
+  margin: 1em;
+  background-color: #FFFFFF;
+}
+
+.breaking-news {
+  background-color: #08626b;
+}
+
+.breaking-news-content {
+  color: #FFFFFF;
+  margin: 1em;
+}
+
+.take-action {
+  background-color: #4a6830;
+}
+
+.take-action-content {
+  margin: 1em;
+  color: #FFFFFF;
 }
 
 footer {
@@ -982,10 +1112,6 @@ footer a:visited {
   background-color: #af5517;
 }
 
-.banner {
-  margin-bottom: 4em;
-}
-
 .btn-updates {
   display: inline-block;
   background-color: #608a3c;
@@ -1037,9 +1163,14 @@ input[placeholder="Enter Your Email"] {
     margin-right: 10em;
     margin-left: 10em;
   }
+  .elephant {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-@media only screen and (min-width: 958px) {
+@media only screen and (min-width: 960px) {
   .footer-contact {
     border: 0;
     border-left: solid #FFFFFF;
