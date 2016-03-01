@@ -37,32 +37,38 @@ main{
 	clear: both;
 	margin-top: 1em;
 	width: 100%;
-
+	p{
+	margin-top:-1em;
+	}
+}
+@media only screen and (min-width: 550px) {
+.contact{
+	height: 80em;
+}
 }
 
 .contact-inside{
-	display: inline-block;
-	float: left;
+	float: none;
 	margin-left: 1.2em;
 }
 .contact-inside-right{
-	display: inline-block;
-	float: right;
+	float: none;
 	margin-left: 1.2em;
 }
 
 
 @media only screen and (min-width: 960px) {
 	.contact{
-	height: 55em;
+	height: 60em;
 }
 	.contact-inside{
-		width: 45%;
+		float:left;
+		width: 25%;
 	}
 	.contact-inside-right{
-		margin-left: 1.2em;
-		float: left;
-		width: 45%;
+		margin-right: 25%;
+		float: right;
+		width: 25%;
 	}
 }
 
