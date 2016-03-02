@@ -32,41 +32,157 @@ body{
     margin: 0 auto;
 }
 
-// ---------- BANNER
-
-.banner {
-    background-image: url(../images/african-elephant.jpeg);
-    display: block;
-    width: 100%;
-    height: 60em;
-    z-index: 0;
+.media {
+    width: 400px;
+    height: 400px;
+    padding: 5em;
 }
 
+// ---------- BANNER
+
 .banner-content {
-    margin: 1em;
+    position: absolute;
 }
 
 .banner-text {
     color: $white;
+    text-align: center;
 }
 
 .btn-take-action {
     @include btn-take-action;
 }
 
-
 .icon-logo {
     z-index: 1000;
     color: $white;
     display: block;
+    position: relative;
+    height: 5em;
 }
 
 @media only screen and (min-width: 540px) {
+    .banner-content {
+        position: absolute;
+    }
 
-    
+    .banner-text{
+        text-align: left;
+    }
+}
+
+// ------- CAROUSEL
+
+.carousel i {
+    z-index: 1000;
+    color: $black;
+    display: block;
+    position: absolute;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: $white;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover,
+.carousel-control:focus,
+.carousel-control:active {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5,
+#carousel-6:checked ~ .control-6 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-size: 30px;
+}
+
+.carousel-bullet:hover,
+.carousel-bullet:focus,
+.carousel-bullet:active {
+    color: darken($white,15%);
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
+    color: $medium-green;
 }
 
 // ---------HOME PAGE
+
+.circle-image {
+    border-radius: 50%;
+}
 
 .btn-learn-more {
     @include btn-learn-more;
@@ -78,6 +194,29 @@ body{
 
 .btn-sign-petition {
     @include btn-sign-petition;
+}
+
+.btn-read-more {
+    @include btn-read-more;
+}
+
+.btn-watch-more {
+    @include btn-watch-more;
+}
+
+.btn-listen {
+    @include btn-listen;
+}
+
+.icon-icon {
+    padding-left: 0.4em; 
+    padding-right: 0.4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
+    font-size: 5em;
+    color: $black;
+    background-color: $white;
+    border-radius: 50%;
 }
 
 .press {
@@ -100,6 +239,10 @@ body{
     background-color: $white;
 }
 
+.about-buttons {
+    margin: 1em;
+}
+
 .breaking-news {
     background-color: $dark-blue;
 }
@@ -118,7 +261,39 @@ body{
     color: $white;
 }
 
+.brief {
+    background-color: $dark-red;
+}
 
+.brief-content {
+    color: $white;
+    margin: 1em;
+}
+
+.ringtones {
+    background-color: $dark-orange;
+}
+
+.ringtones-content {
+    color: $white;
+    margin: 1em;
+}
+
+.videos {
+    background-color: $dark-red;
+}
+
+.videos-content {
+    color: $white;
+    margin: 1em;
+}
+
+.spotlight {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1.4em;
+}
 
 // ---------- FOOTER
 
@@ -141,8 +316,8 @@ footer {
 
 .footer-contact {
     padding: 1em;
-    border-top: solid $white;
-    border-bottom: solid $white;
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
     z-index: 100;
 }
 
@@ -223,12 +398,6 @@ input[placeholder="Enter Your Email"]{
         margin-right: 10em;
         margin-left: 10em;
     }
-    
-    .elephant {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
 }
 
 
@@ -244,4 +413,31 @@ input[placeholder="Enter Your Email"]{
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+
+// ---------- CAMPAIGN DIRECTORY PAGE
+
+.banner-page {
+    background-image: url(../images/african-elephant.jpeg);
+    display: block;
+    width: 100%;
+    height: 30em;
+    z-index: 0;
+}
+
+.pg-title {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px; 
+}
+
+.column {
+  padding: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  column-count: 2;
+  list-style-position: inside;
+  list-style-type: none;
+  column-gap: 40px;
 }

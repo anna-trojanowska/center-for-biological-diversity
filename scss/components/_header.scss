@@ -19,8 +19,7 @@
     margin-left: 1em;
     .icon-menu {
         margin-top: 2em;
-    
-}
+    }
     
 }
 
@@ -28,25 +27,28 @@ input[type="checkbox"]{
     display: none;
 }
 
+.btn-donate {
+    @include btn-donate;
+}
+
 header .btn-donate {
     position: absolute; 
 }
 
 .icon-menu {
-    margin-top: 2em;
-    
+    margin-top: 2em; 
 }
 
 // ---------- TABLET LANDSCAPE + DESKTOP
 @media only screen and (min-width: 700px) {
     header .btn-donate {
-     position: relative; 
+        position: relative; 
     }
 
     header {
-	position: relative;
-	padding: 0;
-	   h1{
+       position: relative;
+       padding: 0;
+       h1{
            z-index: 100;
            text-align: center;
            font-size: 5vw;
