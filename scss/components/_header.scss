@@ -106,3 +106,113 @@ header .btn-donate {
         max-width: 8em;
     }
 }
+
+
+
+
+
+
+
+
+.toggle-btn{
+  position: absolute;
+  right: 1em;
+  top: 0;
+}
+
+.navigation ul{
+  padding: 0;
+  li{
+    list-style-type: none;
+    &:first-child a{
+      border-top: 1px solid $red;
+    }
+  }
+  a{
+    display: block;
+    padding: .5em 1em;
+    border-bottom: 1px solid $red;
+    text-decoration: none;
+    color: $text-color;
+    text-align: center;
+  }
+}
+
+.toggle-btn,
+.close-btn{
+  color: $red;
+  text-decoration: none;
+  height: 40px;
+  width: 40px;
+  &:before{
+    border: 1px solid $red;
+    display: inline-block;
+    padding: 13px 11px;
+    height: 40px;
+    width: 40px;
+  }
+
+
+span{
+  @include element-invisible;
+  }
+}
+
+/**
+  *Sliding Navigation
+  */
+// Page should move when nav opens
+//This is the only time you will ever use max-width for a mediaquery
+@media only screen and (max-width: 60em){
+  .site-wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+  }
+    
+    .sliding-canvas{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateX(0);
+      transition: all 300ms ease-in-out;
+    
+  }
+  
+  &[data-state="slide-open"] .sliding-canvas{
+    transform: translateX(-100%);
+  }
+  &[data-state="slide-open"]{
+    overflow: visible;
+  }
+
+  
+  // Navigation
+  .navigation{
+    //creates the offset of navigation
+    position: absolute;
+    width: 100%;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 0;
+    min-height: 800px;
+  }
+
+} //max-width media-query
+
+//reset the page when desktop, even if nav is toggled open
+@media only screen and (min-width: 60em){
+  .toggle-btn,
+  .close-btn{
+    display: none;
+  }
+}
+
+//show navigation on screen when there is no JS
+body.noscript .navigation{
+  position: static;
+  right: auto;
+}
