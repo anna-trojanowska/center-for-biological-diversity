@@ -15,12 +15,7 @@
 .navigation i {
     color: $medium-green;
     font-size: 3em;
-    margin-top: 4em;
     margin-left: 1em;
-    .icon-menu {
-        margin-top: 2em;
-    }
-    
 }
 
 input[type="checkbox"]{
@@ -38,6 +33,185 @@ header .btn-donate {
 .icon-menu {
     margin-top: 2em; 
 }
+
+
+//---- SLIDING CANVAS
+
+
+.site-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        z-index: 100;
+        
+        .sliding-canvas {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform: translateX(0);
+            transition: all 300ms ease-in-out;
+        }
+        
+        &[data-state="slide-open"] .sliding-canvas {
+            transform: translateX(200px);
+        }
+        
+        &[data-state="slide-open"] {
+            overflow: visible;
+        }
+    } 
+        
+    // Navigation
+
+.expand {
+  float: right; 
+  display: inline; 
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  margin: 0 10px;
+}
+
+    .sidebar-1 {
+    // creates the offset of navigation     
+        position: absolute;
+        width: 200px;
+        left: -200px;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        padding: 0;
+        min-height: 800px;
+    } 
+    
+
+.sidebar-1 {
+  /* these are the styles for the container around the menu */
+  text-align: left;
+  padding: 0px;
+  display:inline-block;
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,.2);
+}
+
+.sidebar-menu {
+  /*this style impacts the look of the heading containers. */
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px;
+    background: $light-green;
+    position: relative;
+    color:$white;
+    border-bottom: 1px solid #dedede;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .5px;
+    padding-right: 50px;
+    &:first-child {
+        border-top: 1px solid #dedede;
+    }
+        &:before, &:after {
+            content: "";
+            width: 3px;
+            height: 25px;
+            background: $white;
+            border-radius: 3px;
+            position: absolute;
+            right: 22px;
+            top: calc(28.7px - 12.5px);
+            transition: all .2s ease;
+        }
+        &:after {
+            transform: rotate(90deg);
+        }
+}
+
+.open:before {
+    animation: turn-plus;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.open:after {
+    animation: turn-crossbar;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turn-plus {
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes turn-crossbar {
+  0% {
+    transform:none;
+    transform: rotate(90deg)
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.sidebar-menu:hover {background: darken($medium-green, 5%);}
+
+.sub-menu {
+  /*this style is for the sub-menu box*/
+  color: $white;
+  font-size: 1em;
+  
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.sub-menu li:hover {
+  background: $dark-green;
+  cursor: pointer;
+}
+
+.sub-menu li {
+  /*this styles individual elements in a sub-menu*/
+  padding: 10px;
+  background: $medium-green;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+.sub-menu ul {
+  /*this just 0s out a bunch of stuff so that it plays nice with the list stylings*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 540px) {
+  .sidebar-menu {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .sub-menu {
+    font-weight: 400;
+  }
+  .sidebar-1 {
+    margin: 0;
+    width: 100%
+  }
+  .sidebar-menu:after, .sidebar-menu:before {
+    top: calc(23.5px - 12.5px);
+  }
+}
+
+
 
 // ---------- TABLET LANDSCAPE + DESKTOP
 @media only screen and (min-width: 700px) {

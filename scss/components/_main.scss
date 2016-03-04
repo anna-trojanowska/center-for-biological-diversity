@@ -53,12 +53,15 @@ body{
     @include btn-take-action;
 }
 
-.icon-logo {
-    z-index: 1000;
-    color: $white;
-    display: block;
-    position: relative;
-    height: 5em;
+.brief-content i {
+    padding-left: 0.4em; 
+    padding-right: 0.4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
+    font-size: 5em;
+    color: $black;
+    background-color: $white;
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 540px) {
@@ -73,11 +76,37 @@ body{
 
 // ------- CAROUSEL
 
+.elephant-banner-content {
+    position: absolute;
+    z-index: 1200;
+}
+
+.drop-shadow {
+    filter: dropshadow((5px 5px 10px $black));
+}
+
 .carousel i {
     z-index: 1000;
-    color: $black;
+    color: $white;
     display: block;
     position: absolute;
+    font-size: 10em;
+    margin-left: 0.2em;
+    margin-top: -0.2em;
+}
+
+.carousel {
+    margin-top: -1em;
+}
+
+@media only screen and (min-width: 700px) {
+    .carousel {
+        margin-top: 0em;
+    }
+    
+    .carousel i {
+        display: none;
+    }   
 }
 
 .carousel-inner {
@@ -182,6 +211,7 @@ body{
 
 .circle-image {
     border-radius: 50%;
+    margin-bottom: 2em;
 }
 
 .btn-learn-more {
@@ -208,17 +238,6 @@ body{
     @include btn-listen;
 }
 
-.icon-icon {
-    padding-left: 0.4em; 
-    padding-right: 0.4em;
-    padding-top: 0.4em;
-    padding-bottom: 0.2em;
-    font-size: 5em;
-    color: $black;
-    background-color: $white;
-    border-radius: 50%;
-}
-
 .press {
     color: $white;
     &:hover {
@@ -241,6 +260,7 @@ body{
 
 .about-buttons {
     margin: 1em;
+    display: block;
 }
 
 .breaking-news {

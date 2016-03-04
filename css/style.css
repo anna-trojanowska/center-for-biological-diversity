@@ -781,12 +781,7 @@ sub {
 .navigation i {
   color: #608a3c;
   font-size: 3em;
-  margin-top: 4em;
   margin-left: 1em;
-}
-
-.navigation i .icon-menu {
-  margin-top: 2em;
 }
 
 input[type="checkbox"] {
@@ -816,6 +811,233 @@ header .btn-donate {
 
 .icon-menu {
   margin-top: 2em;
+}
+
+.site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  z-index: 100;
+}
+
+.site-wrapper .sliding-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  transition: all 300ms ease-in-out;
+}
+
+.site-wrapper[data-state="slide-open"] .sliding-canvas {
+  -webkit-transform: translateX(200px);
+      -ms-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.site-wrapper[data-state="slide-open"] {
+  overflow: visible;
+}
+
+.expand {
+  float: right;
+  display: inline;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  margin: 0 10px;
+}
+
+.sidebar-1 {
+  position: absolute;
+  width: 200px;
+  left: -200px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 0;
+  min-height: 800px;
+}
+
+.sidebar-1 {
+  /* these are the styles for the container around the menu */
+  text-align: left;
+  padding: 0px;
+  display: inline-block;
+  box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-menu {
+  /*this style impacts the look of the heading containers. */
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+  background: #80a143;
+  position: relative;
+  color: #FFFFFF;
+  border-bottom: 1px solid #dedede;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .5px;
+  padding-right: 50px;
+}
+
+.sidebar-menu:first-child {
+  border-top: 1px solid #dedede;
+}
+
+.sidebar-menu:before, .sidebar-menu:after {
+  content: "";
+  width: 3px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  position: absolute;
+  right: 22px;
+  top: calc(28.7px - 12.5px);
+  transition: all .2s ease;
+}
+
+.sidebar-menu:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.open:before {
+  -webkit-animation: turn-plus;
+          animation: turn-plus;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.open:after {
+  -webkit-animation: turn-crossbar;
+          animation: turn-crossbar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes turn-plus {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes turn-plus {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes turn-crossbar {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes turn-crossbar {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.sidebar-menu:hover {
+  background: #547834;
+}
+
+.sub-menu {
+  /*this style is for the sub-menu box*/
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+.sub-menu:last-child {
+  border-bottom: 0;
+}
+
+.sub-menu li:hover {
+  background: #4a6830;
+  cursor: pointer;
+}
+
+.sub-menu li {
+  /*this styles individual elements in a sub-menu*/
+  padding: 10px;
+  background: #608a3c;
+}
+
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+
+.sub-menu ul {
+  /*this just 0s out a bunch of stuff so that it plays nice with the list stylings*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 540px) {
+  .sidebar-menu {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .sub-menu {
+    font-weight: 400;
+  }
+  .sidebar-1 {
+    margin: 0;
+    width: 100%;
+  }
+  .sidebar-menu:after, .sidebar-menu:before {
+    top: calc(23.5px - 12.5px);
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -962,12 +1184,15 @@ body {
   background-color: #88162a;
 }
 
-.icon-logo {
-  z-index: 1000;
-  color: #FFFFFF;
-  display: block;
-  position: relative;
-  height: 5em;
+.brief-content i {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.2em;
+  font-size: 5em;
+  color: #333;
+  background-color: #FFFFFF;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 540px) {
@@ -979,11 +1204,37 @@ body {
   }
 }
 
+.elephant-banner-content {
+  position: absolute;
+  z-index: 1200;
+}
+
+.drop-shadow {
+  -webkit-filter: dropshadow(5px 5px 10px #333);
+          filter: dropshadow(5px 5px 10px #333);
+}
+
 .carousel i {
   z-index: 1000;
-  color: #333;
+  color: #FFFFFF;
   display: block;
   position: absolute;
+  font-size: 10em;
+  margin-left: 0.2em;
+  margin-top: -0.2em;
+}
+
+.carousel {
+  margin-top: -1em;
+}
+
+@media only screen and (min-width: 700px) {
+  .carousel {
+    margin-top: 0em;
+  }
+  .carousel i {
+    display: none;
+  }
 }
 
 .carousel-inner {
@@ -1088,6 +1339,7 @@ body {
 
 .circle-image {
   border-radius: 50%;
+  margin-bottom: 2em;
 }
 
 .btn-learn-more {
@@ -1192,17 +1444,6 @@ body {
   background-color: #0d0d0d;
 }
 
-.icon-icon {
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-  padding-top: 0.4em;
-  padding-bottom: 0.2em;
-  font-size: 5em;
-  color: #333;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-}
-
 .press {
   color: #FFFFFF;
 }
@@ -1226,6 +1467,7 @@ body {
 
 .about-buttons {
   margin: 1em;
+  display: block;
 }
 
 .breaking-news {
