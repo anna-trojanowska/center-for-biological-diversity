@@ -165,7 +165,7 @@ span{
 //This is the only time you will ever use max-width for a mediaquery
 @media only screen and (max-width: 60em){
   .site-wrapper{
-    position: relative;
+    //position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100;
