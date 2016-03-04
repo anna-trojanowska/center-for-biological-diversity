@@ -13,16 +13,21 @@
 </head>
 <body>
     
+ <div class="site-wrapper" data-state="slide-closed">
+        <div class="sliding-canvas">
     
-    {% include header.html %}
-    
-    {{content}}
+        {% include header.html %}
 
-    {% include footer.html %}
+        {{content}}
+
+        {% include footer.html %}
+            
+        </div>
+</div>
         
         
-        <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-        <!-- <script src="js/main.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
         
     
 </body>
