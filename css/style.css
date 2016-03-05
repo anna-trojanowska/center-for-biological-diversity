@@ -1602,12 +1602,9 @@ body {
 
 .about-page-intro {
   background-color: whitesmoke;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
 }
 
-.about-page-intro .about-page-intro-content {
+.about-page-intro-content {
   color: #333;
   margin-top: 0.18em;
   padding-top: 1em;
@@ -1617,33 +1614,33 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-  .about-page-intro .about-page-intro-content {
+  .about-page-intro-content {
     margin: 4em;
   }
-  .about-page-intro .about-page-buttons {
+  .about-page-buttons {
     margin: 4em;
   }
 }
 
-.about-page-intro .mission {
+.mission {
   padding: 1em;
   background-color: #4a6830;
 }
 
-.about-page-intro .mission-content {
+.mission-content {
   padding: 1em;
   color: #FFFFFF;
 }
 
-.about-page-intro .story {
+.story {
   padding: 1em;
 }
 
-.about-page-intro .story-content {
+.story-content {
   padding: 1em;
 }
 
-.about-page-intro .two-column {
+.two-column {
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
@@ -1653,10 +1650,10 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-  .about-page-intro .mission {
+  .mission {
     padding: 4em;
   }
-  .about-page-intro .mission-content {
+  .mission-content {
     padding-top: 1em;
     padding-left: 4em;
     padding-right: 4em;
@@ -1664,37 +1661,37 @@ body {
   }
 }
 
-.about-page-intro footer {
+footer {
   background-color: #333;
   color: #FFFFFF;
   text-align: center;
   padding: 2em;
 }
 
-.about-page-intro footer a {
+footer a {
   text-decoration: none;
 }
 
-.about-page-intro footer a:visited {
+footer a:visited {
   color: #FFFFFF;
 }
 
-.about-page-intro .footer-donate {
+.footer-donate {
   padding: 1em;
 }
 
-.about-page-intro .footer-contact {
+.footer-contact {
   padding: 1em;
   border-top: 2px solid #FFFFFF;
   border-bottom: 2px solid #FFFFFF;
   z-index: 100;
 }
 
-.about-page-intro .footer-join {
+.footer-join {
   padding: 1em;
 }
 
-.about-page-intro .btn-social {
+.btn-social {
   background-color: #FFFFFF;
   text-decoration: none;
   padding-left: 0.8em;
@@ -1706,19 +1703,19 @@ body {
   margin: 0.5em;
 }
 
-.about-page-intro .btn-social:hover,
-.about-page-intro .btn-social:active,
-.about-page-intro .btn-social:focus {
+.btn-social:hover,
+.btn-social:active,
+.btn-social:focus {
   background-color: #cccccc;
 }
 
-.about-page-intro .btn-social i {
+.btn-social i {
   vertical-align: middle;
   font-size: 1em;
   color: #333;
 }
 
-.about-page-intro .btn-donate {
+.btn-donate {
   display: inline-block;
   background-color: #e4792e;
   text-decoration: none;
@@ -1731,11 +1728,11 @@ body {
   padding-right: 1.5em;
 }
 
-.about-page-intro .btn-donate:hover, .about-page-intro .btn-donate:active, .about-page-intro .btn-donate:focus {
+.btn-donate:hover, .btn-donate:active, .btn-donate:focus {
   background-color: #af5517;
 }
 
-.about-page-intro .btn-updates {
+.btn-updates {
   display: inline-block;
   background-color: #608a3c;
   text-decoration: none;
@@ -1748,11 +1745,11 @@ body {
   padding-right: 1em;
 }
 
-.about-page-intro .btn-updates:hover, .about-page-intro .btn-updates:active, .about-page-intro .btn-updates:focus {
+.btn-updates:hover, .btn-updates:active, .btn-updates:focus {
   background-color: #3b5525;
 }
 
-.about-page-intro .copyright {
+.copyright {
   padding-top: 4em;
   text-align: center;
   font-size: 0.6em;
@@ -1760,13 +1757,13 @@ body {
   letter-spacing: 0.2em;
 }
 
-.about-page-intro input[type="submit"] {
+input[type="submit"] {
   -webkit-appearance: none;
   cursor: pointer;
   border: 0;
 }
 
-.about-page-intro input[type="email"] {
+input[type="email"] {
   -webkit-appearance: none;
   cursor: pointer;
   border: 0;
@@ -1774,7 +1771,7 @@ body {
   height: 3em;
 }
 
-.about-page-intro input[placeholder="Enter Your Email"] {
+input[placeholder="Enter Your Email"] {
   padding-left: 0.8em;
   display: block;
   margin: 1em auto;
@@ -1782,25 +1779,25 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-  .about-page-intro .social-media {
+  .social-media {
     margin-right: 10em;
     margin-left: 10em;
   }
 }
 
 @media only screen and (min-width: 960px) {
-  .about-page-intro .footer-contact {
+  .footer-contact {
     border: 0;
     border-left: solid #FFFFFF;
     border-right: solid #FFFFFF;
   }
-  .about-page-intro .social-media {
+  .social-media {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-.about-page-intro .banner-page {
+.banner-page {
   background-image: url(../images/african-elephant.jpeg);
   display: block;
   width: 100%;
@@ -1808,13 +1805,13 @@ body {
   z-index: 0;
 }
 
-.about-page-intro .pg-title {
+.pg-title {
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.about-page-intro .column {
+.column {
   padding: 0;
   padding-left: 40px;
   padding-right: 40px;
@@ -1823,6 +1820,9 @@ body {
           column-count: 2;
   list-style-position: inside;
   list-style-type: none;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

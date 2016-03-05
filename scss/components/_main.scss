@@ -329,7 +329,7 @@ body{
 
 .about-page-intro {
     background-color: $grey;
-   
+}
 
 .about-page-intro-content {
     color: $black;
@@ -371,10 +371,6 @@ body{
 .two-column {
     column-count: 2;
     column-gap: 40px;
-}
-
-@media only screen and (min-width: 700px) {
- 
 }
 
 @media only screen and (min-width: 700px) {
@@ -506,8 +502,8 @@ input[placeholder="Enter Your Email"]{
     }
 }
 
-// ---------- CAMPAIGN DIRECTORY PAGE
-
+// ------ CAMPAIGN DIRECTORY PAGE
+    
 .banner-page {
     background-image: url(../images/african-elephant.jpeg);
     display: block;
@@ -517,17 +513,17 @@ input[placeholder="Enter Your Email"]{
 }
 
 .pg-title {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px; 
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px; 
 }
 
 .column {
-  padding: 0;
-  padding-left: 40px;
-  padding-right: 40px;
-  column-count: 2;
-  list-style-position: inside;
-  list-style-type: none;
-  column-gap: 40px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    column-count: 2;
+    list-style-position: inside;
+    list-style-type: none;
+    column-gap: 40px;
 }
