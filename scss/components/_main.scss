@@ -329,24 +329,21 @@ body{
 
 .about-page-intro {
     background-color: $grey;
-}
-
-.about-page-intro-content {
-    color: $black;
     margin-top: 0.18em;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    
+}
+
+.about-page-intro-content {
+    color: $black;
 }
 
 @media only screen and (min-width: 700px) {
-    .about-page-intro-content {
-        margin: 4em;
-    }
-    
-    .about-page-buttons {
-        margin: 4em;
+    .about-page-intro{
+        padding: 4em;
     }
 }
 
@@ -356,33 +353,31 @@ body{
 }
 
 .mission-content {
-    padding: 1em;
     color: $white;
-}
-
-.story {
-    padding: 1em;
-}
-
-.story-content {
-    padding: 1em;
-}
-
-.two-column {
-    column-count: 2;
-    column-gap: 40px;
 }
 
 @media only screen and (min-width: 700px) {
     .mission {
         padding: 4em;
     }
+}
 
-    .mission-content {
-        padding-top: 1em;
-        padding-left: 4em;
-        padding-right: 4em;
-        padding-bottom: 1em;
+.story {
+    padding: 1em;
+    background-color: $grey;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    .story {
+        padding: 4em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .two-column {
+        column-count: 2;
+        column-gap: 40px;
     }
 }
 

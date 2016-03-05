@@ -1602,10 +1602,6 @@ body {
 
 .about-page-intro {
   background-color: whitesmoke;
-}
-
-.about-page-intro-content {
-  color: #333;
   margin-top: 0.18em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1613,12 +1609,13 @@ body {
   padding-right: 1em;
 }
 
+.about-page-intro-content {
+  color: #333;
+}
+
 @media only screen and (min-width: 700px) {
-  .about-page-intro-content {
-    margin: 4em;
-  }
-  .about-page-buttons {
-    margin: 4em;
+  .about-page-intro {
+    padding: 4em;
   }
 }
 
@@ -1628,36 +1625,34 @@ body {
 }
 
 .mission-content {
-  padding: 1em;
   color: #FFFFFF;
-}
-
-.story {
-  padding: 1em;
-}
-
-.story-content {
-  padding: 1em;
-}
-
-.two-column {
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
 }
 
 @media only screen and (min-width: 700px) {
   .mission {
     padding: 4em;
   }
-  .mission-content {
-    padding-top: 1em;
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-bottom: 1em;
+}
+
+.story {
+  padding: 1em;
+  background-color: whitesmoke;
+}
+
+@media only screen and (min-width: 700px) {
+  .story {
+    padding: 4em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .two-column {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
   }
 }
 
