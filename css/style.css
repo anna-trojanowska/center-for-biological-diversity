@@ -1602,75 +1602,99 @@ body {
 
 .about-page-intro {
   background-color: whitesmoke;
-  margin-top: 0.18em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
 
-.about-page-intro-content {
+.about-page-intro .about-page-intro-content {
   color: #333;
-  margin: 1em;
+  margin-top: 0.18em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 @media only screen and (min-width: 700px) {
-  .about-page-intro-content {
+  .about-page-intro .about-page-intro-content {
     margin: 4em;
   }
-  .about-page-buttons {
+  .about-page-intro .about-page-buttons {
     margin: 4em;
   }
 }
 
-.mission {
-  margin: 1em;
+.about-page-intro .mission {
+  padding: 1em;
+  background-color: #4a6830;
 }
 
-.mission-content {
-  margin: 1em;
+.about-page-intro .mission-content {
+  padding: 1em;
+  color: #FFFFFF;
+}
+
+.about-page-intro .story {
+  padding: 1em;
+}
+
+.about-page-intro .story-content {
+  padding: 1em;
+}
+
+.about-page-intro .two-column {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
 
 @media only screen and (min-width: 700px) {
-  .mission {
-    margin: 4em;
+  .about-page-intro .mission {
+    padding: 4em;
   }
-  .mission-content {
-    margin: 4em;
+  .about-page-intro .mission-content {
+    padding-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 1em;
   }
 }
 
-footer {
+.about-page-intro footer {
   background-color: #333;
   color: #FFFFFF;
   text-align: center;
   padding: 2em;
 }
 
-footer a {
+.about-page-intro footer a {
   text-decoration: none;
 }
 
-footer a:visited {
+.about-page-intro footer a:visited {
   color: #FFFFFF;
 }
 
-.footer-donate {
+.about-page-intro .footer-donate {
   padding: 1em;
 }
 
-.footer-contact {
+.about-page-intro .footer-contact {
   padding: 1em;
   border-top: 2px solid #FFFFFF;
   border-bottom: 2px solid #FFFFFF;
   z-index: 100;
 }
 
-.footer-join {
+.about-page-intro .footer-join {
   padding: 1em;
 }
 
-.btn-social {
+.about-page-intro .btn-social {
   background-color: #FFFFFF;
   text-decoration: none;
   padding-left: 0.8em;
@@ -1682,19 +1706,19 @@ footer a:visited {
   margin: 0.5em;
 }
 
-.btn-social:hover,
-.btn-social:active,
-.btn-social:focus {
+.about-page-intro .btn-social:hover,
+.about-page-intro .btn-social:active,
+.about-page-intro .btn-social:focus {
   background-color: #cccccc;
 }
 
-.btn-social i {
+.about-page-intro .btn-social i {
   vertical-align: middle;
   font-size: 1em;
   color: #333;
 }
 
-.btn-donate {
+.about-page-intro .btn-donate {
   display: inline-block;
   background-color: #e4792e;
   text-decoration: none;
@@ -1707,11 +1731,11 @@ footer a:visited {
   padding-right: 1.5em;
 }
 
-.btn-donate:hover, .btn-donate:active, .btn-donate:focus {
+.about-page-intro .btn-donate:hover, .about-page-intro .btn-donate:active, .about-page-intro .btn-donate:focus {
   background-color: #af5517;
 }
 
-.btn-updates {
+.about-page-intro .btn-updates {
   display: inline-block;
   background-color: #608a3c;
   text-decoration: none;
@@ -1724,11 +1748,11 @@ footer a:visited {
   padding-right: 1em;
 }
 
-.btn-updates:hover, .btn-updates:active, .btn-updates:focus {
+.about-page-intro .btn-updates:hover, .about-page-intro .btn-updates:active, .about-page-intro .btn-updates:focus {
   background-color: #3b5525;
 }
 
-.copyright {
+.about-page-intro .copyright {
   padding-top: 4em;
   text-align: center;
   font-size: 0.6em;
@@ -1736,13 +1760,13 @@ footer a:visited {
   letter-spacing: 0.2em;
 }
 
-input[type="submit"] {
+.about-page-intro input[type="submit"] {
   -webkit-appearance: none;
   cursor: pointer;
   border: 0;
 }
 
-input[type="email"] {
+.about-page-intro input[type="email"] {
   -webkit-appearance: none;
   cursor: pointer;
   border: 0;
@@ -1750,7 +1774,7 @@ input[type="email"] {
   height: 3em;
 }
 
-input[placeholder="Enter Your Email"] {
+.about-page-intro input[placeholder="Enter Your Email"] {
   padding-left: 0.8em;
   display: block;
   margin: 1em auto;
@@ -1758,25 +1782,25 @@ input[placeholder="Enter Your Email"] {
 }
 
 @media only screen and (min-width: 700px) {
-  .social-media {
+  .about-page-intro .social-media {
     margin-right: 10em;
     margin-left: 10em;
   }
 }
 
 @media only screen and (min-width: 960px) {
-  .footer-contact {
+  .about-page-intro .footer-contact {
     border: 0;
     border-left: solid #FFFFFF;
     border-right: solid #FFFFFF;
   }
-  .social-media {
+  .about-page-intro .social-media {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-.banner-page {
+.about-page-intro .banner-page {
   background-image: url(../images/african-elephant.jpeg);
   display: block;
   width: 100%;
@@ -1784,13 +1808,13 @@ input[placeholder="Enter Your Email"] {
   z-index: 0;
 }
 
-.pg-title {
+.about-page-intro .pg-title {
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.column {
+.about-page-intro .column {
   padding: 0;
   padding-left: 40px;
   padding-right: 40px;
@@ -1799,9 +1823,6 @@ input[placeholder="Enter Your Email"] {
           column-count: 2;
   list-style-position: inside;
   list-style-type: none;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

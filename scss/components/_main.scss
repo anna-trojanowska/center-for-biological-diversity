@@ -267,9 +267,7 @@ body{
         padding: 4em;
         background-color: $grey;
     }
-
 }
-
 
 .breaking-news {
     background-color: $dark-blue;
@@ -331,16 +329,15 @@ body{
 
 .about-page-intro {
     background-color: $grey;
-    margin-top: 0.18em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
+   
 
 .about-page-intro-content {
     color: $black;
-    margin: 1em;
+    margin-top: 0.18em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -354,20 +351,42 @@ body{
 }
 
 .mission {
-    margin: 1em;
+    padding: 1em;
+    background-color: $dark-green;
 }
 
 .mission-content {
-    margin: 1em;
+    padding: 1em;
+    color: $white;
+}
+
+.story {
+    padding: 1em;
+}
+
+.story-content {
+    padding: 1em;
+}
+
+.two-column {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+@media only screen and (min-width: 700px) {
+ 
 }
 
 @media only screen and (min-width: 700px) {
     .mission {
-        margin: 4em;
+        padding: 4em;
     }
 
     .mission-content {
-        margin: 4em;
+        padding-top: 1em;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-bottom: 1em;
     }
 }
 
@@ -463,10 +482,6 @@ input[placeholder="Enter Your Email"]{
     box-sizing: border-box;
 }
 
-
-
-
-
 // ---------- TABLET PORTRAIT
   
 @media only screen and (min-width: 700px) {
@@ -490,7 +505,6 @@ input[placeholder="Enter Your Email"]{
         margin-right: 0;
     }
 }
-
 
 // ---------- CAMPAIGN DIRECTORY PAGE
 
