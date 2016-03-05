@@ -250,18 +250,26 @@ body{
 }
 
 .about-the-center {
-    background-color: $white;
+    background-color: $grey;
 }
 
 .about-the-center-content {
     margin: 1em;
-    background-color: $white;
 }
 
 .about-buttons {
     margin: 1em;
     display: block;
 }
+
+@media only screen and (min-width: 700px) {
+    .about-the-center {
+        padding: 4em;
+        background-color: $grey;
+    }
+
+}
+
 
 .breaking-news {
     background-color: $dark-blue;
@@ -313,6 +321,54 @@ body{
     width: 100%;
     margin: 0 auto;
     padding-bottom: 1.4em;
+}
+
+.in-the-spotlight-content {
+    background-color: $grey;
+}
+
+// -----ABOUT PAGE
+
+.about-page-intro {
+    background-color: $grey;
+    margin-top: 0.18em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.about-page-intro-content {
+    color: $black;
+    margin: 1em;
+}
+
+@media only screen and (min-width: 700px) {
+    .about-page-intro-content {
+        margin: 4em;
+    }
+    
+    .about-page-buttons {
+        margin: 4em;
+    }
+}
+
+.mission {
+    margin: 1em;
+}
+
+.mission-content {
+    margin: 1em;
+}
+
+@media only screen and (min-width: 700px) {
+    .mission {
+        margin: 4em;
+    }
+
+    .mission-content {
+        margin: 4em;
+    }
 }
 
 // ---------- FOOTER

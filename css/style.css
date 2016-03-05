@@ -1083,7 +1083,7 @@ header .btn-donate {
             transform: translateX(200px);
   }
   [data-state="slide-open"] {
-    overflow: hidden;
+    overflow: visible;
   }
 }
 
@@ -1525,17 +1525,23 @@ body {
 }
 
 .about-the-center {
-  background-color: #FFFFFF;
+  background-color: whitesmoke;
 }
 
 .about-the-center-content {
   margin: 1em;
-  background-color: #FFFFFF;
 }
 
 .about-buttons {
   margin: 1em;
   display: block;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-the-center {
+    padding: 4em;
+    background-color: whitesmoke;
+  }
 }
 
 .breaking-news {
@@ -1588,6 +1594,50 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 1.4em;
+}
+
+.in-the-spotlight-content {
+  background-color: whitesmoke;
+}
+
+.about-page-intro {
+  background-color: whitesmoke;
+  margin-top: 0.18em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.about-page-intro-content {
+  color: #333;
+  margin: 1em;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-page-intro-content {
+    margin: 4em;
+  }
+  .about-page-buttons {
+    margin: 4em;
+  }
+}
+
+.mission {
+  margin: 1em;
+}
+
+.mission-content {
+  margin: 1em;
+}
+
+@media only screen and (min-width: 700px) {
+  .mission {
+    margin: 4em;
+  }
+  .mission-content {
+    margin: 4em;
+  }
 }
 
 footer {
