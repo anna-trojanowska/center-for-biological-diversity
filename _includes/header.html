@@ -16,7 +16,7 @@
                     <li class="nav-link"><a href="{{site.baseurl}}/news" data-sidebar-id="sidebar-news" class="{% if page.url == '/news/' %}current{% endif %}">News</a></li>
                     <li class="nav-link"><a href="{{site.baseurl}}/species" data-sidebar-id="sidebar-species" class="{% if page.url == '/species/' %}current{% endif %}">Species</a></li>
                 </ul>
-                <a class="btn-donate peta" href="#">Donate</a>
+                <a class="btn-donate peta" href="{{site.baseurl}}/donate">Donate</a>
                 
             </nav>
         </div>
@@ -24,6 +24,9 @@
     </div>
     
     <div class="sidebar-1"> 
+        <div class="sidebar-close">
+            <i class="icon-close" data-sidebar-id="sidebar-close"></i>
+        </div>
         <div class="sidebar-menu" id="sidebar-about">About<div class="expand"></div></div>
         <div class="sub-menu">
             <ul>
@@ -64,7 +67,7 @@
                 <li class="tab-left">Annual Reports</li>
                 <li class="tab-left">Special Status Reviews</li>
                 <li class="tab-left">Research Topics</li>
-                <li class="uppercase">Media</li>
+                <li><a class="uppercase" href="{{site.baseurl}}/media">Media</a></li>
                 <li class="tab-left">Press Releases</li>
                 <li class="tab-left">Center in the News</li>
                 <li class="tab-left">Perspectives & Op Eds</li>

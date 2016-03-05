@@ -818,9 +818,10 @@ header .btn-donate {
   overflow: hidden;
   width: 100%;
   z-index: 100;
+  background-colour: #608a3c;
 }
 
-.site-wrapper .sliding-canvas {
+.sliding-canvas {
   width: 100%;
   height: 100%;
   position: relative;
@@ -830,14 +831,14 @@ header .btn-donate {
   transition: all 300ms ease-in-out;
 }
 
-.site-wrapper[data-state="slide-open"] .sliding-canvas {
-  -webkit-transform: translateX(200px);
-      -ms-transform: translateX(200px);
-          transform: translateX(200px);
+[data-state="slide-open"] .sliding-canvas {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
-.site-wrapper[data-state="slide-open"] {
-  overflow: visible;
+[data-state="slide-open"] {
+  overflow: hidden;
 }
 
 .expand {
@@ -848,15 +849,23 @@ header .btn-donate {
   margin: 0 10px;
 }
 
+.uppercase {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.tab-left {
+  margin-left: 2em;
+}
+
 .sidebar-1 {
   position: absolute;
-  width: 200px;
-  left: -200px;
+  width: 100%;
   top: 0;
   bottom: 0;
   height: 100%;
   padding: 0;
-  min-height: 800px;
 }
 
 .sidebar-1 {
@@ -876,6 +885,7 @@ header .btn-donate {
   position: relative;
   color: #FFFFFF;
   border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
   font-size: 1.5em;
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -1023,6 +1033,15 @@ header .btn-donate {
   padding: 0;
 }
 
+.sidebar-close i {
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+.sidebar-close {
+  padding: 0.8em;
+}
+
 @media (max-width: 540px) {
   .sidebar-menu {
     font-size: 1em;
@@ -1041,67 +1060,116 @@ header .btn-donate {
 }
 
 @media only screen and (min-width: 700px) {
-  header .btn-donate {
+  .site-wrapper {
     position: relative;
-  }
-  header {
-    position: relative;
-    padding: 0;
-  }
-  header h1 {
+    overflow: hidden;
+    width: 100%;
     z-index: 100;
-    text-align: center;
-    font-size: 5vw;
-    color: #FFFFFF;
+    background-color: #608a3c;
   }
-  .nav-wrapper {
-    height: 4.9em;
+  .sliding-canvas {
+    width: 100%;
+    height: 100%;
     position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    transition: all 300ms ease-in-out;
+    background-color: #FFFFFF;
   }
-  .navigation {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
+  [data-state="slide-open"] .sliding-canvas {
+    -webkit-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+            transform: translateX(200px);
   }
-  .navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
+  [data-state="slide-open"] {
+    overflow: hidden;
   }
-  .navigation li {
-    position: relative;
-    display: inline-block;
-  }
-  .navigation li a {
-    display: inline-block;
-    color: #4a6830;
-    text-decoration: none;
-    padding: 1em;
-  }
-  .navigation li a::after {
-    content: "";
-    border-bottom: 2px solid #608a3c;
-    position: relative;
-    bottom: .2em;
-    height: 1px;
-    display: block;
-  }
-  .navigation li a:hover {
-    color: #638b40;
-  }
-  .navigation label {
-    display: none;
-  }
-  .nav-logo {
-    display: inline-block;
-    margin-top: 1em;
-    margin-left: 1.2em;
-    max-width: 8em;
-  }
+}
+
+.sidebar-1 {
+  position: absolute;
+  width: 200px;
+  left: -200px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 0;
+  background-color: #608a3c;
+}
+
+header .btn-donate {
+  position: relative;
+}
+
+header {
+  position: relative;
+  padding: 0;
+}
+
+header h1 {
+  z-index: 100;
+  text-align: center;
+  font-size: 5vw;
+  color: #FFFFFF;
+}
+
+.nav-wrapper {
+  height: 4.9em;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-colour: #FFFFFF;
+}
+
+.navigation {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.navigation li {
+  position: relative;
+  display: inline-block;
+}
+
+.navigation li a {
+  display: inline-block;
+  color: #4a6830;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.navigation li a::after {
+  content: "";
+  border-bottom: 2px solid #608a3c;
+  position: relative;
+  bottom: .2em;
+  height: 1px;
+  display: block;
+}
+
+.navigation li a:hover {
+  color: #638b40;
+}
+
+.navigation label {
+  display: none;
+}
+
+.nav-logo {
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 1.2em;
+  max-width: 8em;
 }
 
 @-moz-viewport {
