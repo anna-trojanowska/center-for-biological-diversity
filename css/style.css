@@ -1893,4 +1893,19 @@ input[placeholder="Enter Your Email"] {
   outline: 3px solid #333;
 }
 
+.form-title {
+  text-transform: uppercase;
+}
+
+.side-form {
+  position: relative;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-bottom: 4em;
+}
+
+.form-block {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */

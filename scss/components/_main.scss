@@ -617,3 +617,18 @@ input[placeholder="Enter Your Email"]{
 .width:focus {
 	outline: 3px solid $black;
 }
+
+.form-title {
+	  text-transform: uppercase;
+}
+
+.side-form {
+	position: relative;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding-bottom: 4em;
+}
+
+.form-block {
+  display: block;
+}
