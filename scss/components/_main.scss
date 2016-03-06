@@ -212,6 +212,7 @@ body{
 .circle-image {
     border-radius: 50%;
     margin-bottom: 2em;
+    padding: 2em;
 }
 
 .btn-learn-more {
@@ -266,6 +267,10 @@ body{
     .about-the-center {
         padding: 4em;
         background-color: $grey;
+    }
+    
+    .circle-image {
+        padding: 0em;
     }
 }
 
