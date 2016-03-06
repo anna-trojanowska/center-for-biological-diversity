@@ -915,6 +915,11 @@ header .btn-donate {
           transform: rotate(90deg);
 }
 
+.menu-title {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .open:before {
   -webkit-animation: turn-plus;
           animation: turn-plus;
@@ -1615,6 +1620,9 @@ body {
   .about-page-intro {
     padding: 4em;
   }
+  .about-page-intro-content {
+    padding-right: 6em;
+  }
 }
 
 .mission {
@@ -1782,9 +1790,6 @@ input[placeholder="Enter Your Email"] {
     margin-left: 0;
     margin-right: 0;
     padding: 1em;
-  }
-  .social {
-    margin-left: -0.4em;
   }
 }
 

@@ -135,6 +135,11 @@ header .btn-donate {
         }
 }
 
+.menu-title {
+    text-decoration: none;
+    color: $white;
+}
+
 .open:before {
     animation: turn-plus;
     animation-duration: .3s;
@@ -172,7 +177,9 @@ header .btn-donate {
   }
 }
 
-.sidebar-menu:hover {background: darken($medium-green, 5%);}
+.sidebar-menu:hover {
+    background: darken($medium-green, 5%);
+}
 
 .sub-menu {
   /*this style is for the sub-menu box*/

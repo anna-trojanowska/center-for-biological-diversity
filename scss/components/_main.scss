@@ -356,6 +356,10 @@ body{
     .about-page-intro{
         padding: 4em;
     }
+    
+    .about-page-intro-content {
+        padding-right: 6em;
+    }
 }
 
 .mission {
@@ -498,9 +502,6 @@ input[placeholder="Enter Your Email"]{
         padding: 1em;
     }
     
-    .social {
-        margin-left: -0.4em;
-    }
 }
 
 @media only screen and (min-width: 960px) {
