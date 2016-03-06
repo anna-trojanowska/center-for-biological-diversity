@@ -6,9 +6,9 @@
     display: none;
 }
 
-.navigation {
-    li {
-        display: none;
+.navigation li {
+    a {
+        display: inline-block;
     }
 }
 
@@ -27,7 +27,7 @@ input[type="checkbox"]{
 }
 
 header .btn-donate {
-    position: absolute; 
+    position: relative; 
 }
 
 .icon-menu {
@@ -213,6 +213,10 @@ header .btn-donate {
     padding: 0.8em;
 }
 
+.toggle {
+    margin-top: 1em;
+}
+
 @media (max-width: 540px) {
   .sidebar-menu {
     font-size: 1em;
@@ -262,7 +266,7 @@ header .btn-donate {
             overflow: visible;
         }
     
-    } 
+
 
     .sidebar-1 {   
         position: absolute;
@@ -275,9 +279,7 @@ header .btn-donate {
         background-color: $medium-green;
     } 
     
-    header .btn-donate {
-        position: relative; 
-    }
+    
 
     header {
 	   position: relative;
@@ -289,6 +291,7 @@ header .btn-donate {
            color: $white;
         }
     }
+    
 
     .nav-wrapper {
         height: 4.9em;
@@ -342,3 +345,4 @@ header .btn-donate {
         margin-left: 1.2em;
         max-width: 8em;
     }
+}

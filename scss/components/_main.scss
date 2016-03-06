@@ -473,17 +473,19 @@ input[placeholder="Enter Your Email"]{
     box-sizing: border-box;
 }
 
-// ---------- TABLET PORTRAIT
-  
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 960px) {
+    .footer-contact{
+        border: 0;
+        border-left: solid $white;
+        border-right: solid $white;
+    }
+    
     .social-media {
-        margin-right: 10em;
-        margin-left: 10em;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
-
-// ---------- TABLET LANDSCAPE + DESKTOP
 @media only screen and (min-width: 960px) {
     .footer-contact{
         border: 0;
@@ -503,6 +505,7 @@ input[placeholder="Enter Your Email"]{
     display: block;
     width: 100%;
     z-index: 0;
+    margin-top: 0.18em;
 }
 
 .campaign-banner-text {
@@ -515,4 +518,67 @@ input[placeholder="Enter Your Email"]{
         column-count: 2;
         column-gap: 40px;
 }
+
+.endangered-species {
+    padding: 1em;
+    background-color: $grey;
+}
+
+.climate-law {
+    color: $white;
+    padding: 1em;
+    background-color: $dark-green;
+}
+
+.oceans {
+    padding: 1em;
+    background-color: $dark-blue; 
+    color: $white;
+}
+
+.population {
+    padding: 1em;
+    background-color: $dark-orange; 
+    color: $white;
+}
+
+.public-lands {
+    padding: 1em;
+    background-color: $grey; 
+    color: $black;
+}
+
+.environmental-health {
+    padding: 1em;
+    background-color: $dark-green; 
+    color: $white;
+}
+
+@media only screen and (min-width: 700px) {
+    .endangered-species {
+        padding: 4em;
+    }
+    
+    .climate-law {
+        padding: 4em;
+    }
+    
+    .oceans {
+        padding: 4em;
+    }
+    
+    .population {
+        padding: 4em; 
+    }
+    
+    .public-lands {
+        padding: 4em; 
+    }
+    
+    .environmental-health {
+        padding: 4em; 
+    }
+}
+
+
 

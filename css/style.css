@@ -774,8 +774,8 @@ sub {
   display: none;
 }
 
-.navigation li {
-  display: none;
+.navigation li a {
+  display: inline-block;
 }
 
 .navigation i {
@@ -806,7 +806,7 @@ input[type="checkbox"] {
 }
 
 header .btn-donate {
-  position: absolute;
+  position: relative;
 }
 
 .icon-menu {
@@ -1042,6 +1042,10 @@ header .btn-donate {
   padding: 0.8em;
 }
 
+.toggle {
+  margin-top: 1em;
+}
+
 @media (max-width: 540px) {
   .sidebar-menu {
     font-size: 1em;
@@ -1085,91 +1089,75 @@ header .btn-donate {
   [data-state="slide-open"] {
     overflow: visible;
   }
-}
-
-.sidebar-1 {
-  position: absolute;
-  width: 200px;
-  left: -200px;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  padding: 0;
-  background-color: #608a3c;
-}
-
-header .btn-donate {
-  position: relative;
-}
-
-header {
-  position: relative;
-  padding: 0;
-}
-
-header h1 {
-  z-index: 100;
-  text-align: center;
-  font-size: 5vw;
-  color: #FFFFFF;
-}
-
-.nav-wrapper {
-  height: 4.9em;
-  position: relative;
-  max-width: 1400px;
-  margin: 0 auto;
-  background-colour: #FFFFFF;
-}
-
-.navigation {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline;
-}
-
-.navigation li {
-  position: relative;
-  display: inline-block;
-}
-
-.navigation li a {
-  display: inline-block;
-  color: #4a6830;
-  text-decoration: none;
-  padding: 1em;
-}
-
-.navigation li a::after {
-  content: "";
-  border-bottom: 2px solid #608a3c;
-  position: relative;
-  bottom: .2em;
-  height: 1px;
-  display: block;
-}
-
-.navigation li a:hover {
-  color: #638b40;
-}
-
-.navigation label {
-  display: none;
-}
-
-.nav-logo {
-  display: inline-block;
-  margin-top: 1em;
-  margin-left: 1.2em;
-  max-width: 8em;
+  .sidebar-1 {
+    position: absolute;
+    width: 200px;
+    left: -200px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 0;
+    background-color: #608a3c;
+  }
+  header {
+    position: relative;
+    padding: 0;
+  }
+  header h1 {
+    z-index: 100;
+    text-align: center;
+    font-size: 5vw;
+    color: #FFFFFF;
+  }
+  .nav-wrapper {
+    height: 4.9em;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-colour: #FFFFFF;
+  }
+  .navigation {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  .navigation li {
+    position: relative;
+    display: inline-block;
+  }
+  .navigation li a {
+    display: inline-block;
+    color: #4a6830;
+    text-decoration: none;
+    padding: 1em;
+  }
+  .navigation li a::after {
+    content: "";
+    border-bottom: 2px solid #608a3c;
+    position: relative;
+    bottom: .2em;
+    height: 1px;
+    display: block;
+  }
+  .navigation li a:hover {
+    color: #638b40;
+  }
+  .navigation label {
+    display: none;
+  }
+  .nav-logo {
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1.2em;
+    max-width: 8em;
+  }
 }
 
 @-moz-viewport {
@@ -1773,10 +1761,15 @@ input[placeholder="Enter Your Email"] {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 960px) {
+  .footer-contact {
+    border: 0;
+    border-left: solid #FFFFFF;
+    border-right: solid #FFFFFF;
+  }
   .social-media {
-    margin-right: 10em;
-    margin-left: 10em;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1796,6 +1789,7 @@ input[placeholder="Enter Your Email"] {
   display: block;
   width: 100%;
   z-index: 0;
+  margin-top: 0.18em;
 }
 
 .campaign-banner-text {
@@ -1811,6 +1805,62 @@ input[placeholder="Enter Your Email"] {
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
+}
+
+.endangered-species {
+  padding: 1em;
+  background-color: whitesmoke;
+}
+
+.climate-law {
+  color: #FFFFFF;
+  padding: 1em;
+  background-color: #4a6830;
+}
+
+.oceans {
+  padding: 1em;
+  background-color: #08626b;
+  color: #FFFFFF;
+}
+
+.population {
+  padding: 1em;
+  background-color: #c15027;
+  color: #FFFFFF;
+}
+
+.public-lands {
+  padding: 1em;
+  background-color: whitesmoke;
+  color: #333;
+}
+
+.environmental-health {
+  padding: 1em;
+  background-color: #4a6830;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 700px) {
+  .endangered-species {
+    padding: 4em;
+  }
+  .climate-law {
+    padding: 4em;
+  }
+  .oceans {
+    padding: 4em;
+  }
+  .population {
+    padding: 4em;
+  }
+  .public-lands {
+    padding: 4em;
+  }
+  .environmental-health {
+    padding: 4em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
