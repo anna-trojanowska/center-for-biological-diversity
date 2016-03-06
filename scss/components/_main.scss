@@ -215,6 +215,8 @@ body{
     padding: 2em;
 }
 
+
+
 .btn-learn-more {
     @include btn-learn-more;
 }
@@ -419,13 +421,14 @@ footer {
 .btn-social {
     background-color: $white;
     text-decoration: none;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-    padding-top: 0.6em;
-    padding-bottom: 0.4em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
     border-radius: 50%;
     display: inline-block;
-    margin: 0.5em;
+    margin: 1px;
+    text-align: center;
 }
 
 .btn-social:hover,
@@ -437,7 +440,8 @@ footer {
 .btn-social i {
     vertical-align: middle;
     font-size: 1em;
-    color: $black;    
+    color: $black;  
+    text-align: center;
 }
 
 .btn-donate {
