@@ -605,4 +605,15 @@ input[placeholder="Enter Your Email"]{
 }
 
 
+// --- DONATE PAGE
 
+.width {
+  width: 100%;
+  height: 3em;
+  outline: solid 1px $black;
+  border-style: none;
+}
+
+.width:focus {
+	outline: 3px solid $black;
+}
