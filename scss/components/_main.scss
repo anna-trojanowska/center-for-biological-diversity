@@ -211,11 +211,10 @@ body{
 
 .circle-image {
     border-radius: 50%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: -1em;
     padding: 2em;
 }
-
-
 
 .btn-learn-more {
     @include btn-learn-more;
@@ -252,6 +251,10 @@ body{
     margin: 1em;
 }
 
+.spotlight-title {
+    margin-bottom: -2em;
+}
+
 .about-the-center {
     background-color: $grey;
 }
@@ -273,6 +276,7 @@ body{
     
     .circle-image {
         padding: 0em;
+        margin-bottom: 2em;
     }
 }
 
@@ -408,7 +412,7 @@ footer {
 }
 
 .footer-contact {
-    padding: 1em;
+    padding: 2em;
     border-top: 2px solid $white;
     border-bottom: 2px solid $white;
     z-index: 100;
@@ -417,6 +421,10 @@ footer {
 .footer-join {
     padding: 1em;
 }
+
+  .social {
+        margin-left: 0em;
+    }
 
 .btn-social {
     background-color: $white;
@@ -482,21 +490,21 @@ input[placeholder="Enter Your Email"]{
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 960px) {
-    .footer-contact{
-        border: 0;
-        border-left: solid $white;
-        border-right: solid $white;
-    }
-    
+
+@media only screen and (min-width: 700px) {  
     .social-media {
         margin-left: 0;
         margin-right: 0;
+        padding: 1em;
+    }
+    
+    .social {
+        margin-left: -0.4em;
     }
 }
 
 @media only screen and (min-width: 960px) {
-    .footer-contact{
+    .footer-contact {
         border: 0;
         border-left: solid $white;
         border-right: solid $white;
@@ -505,8 +513,15 @@ input[placeholder="Enter Your Email"]{
     .social-media {
         margin-left: 0;
         margin-right: 0;
+        padding: 0;
+    }
+    
+    .btn-social {
+        margin: 1em;
     }
 }
+    
+
 
 // ------ CAMPAIGN DIRECTORY PAGE
     
