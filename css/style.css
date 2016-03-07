@@ -1948,6 +1948,78 @@ input[type="email-donate"] {
   }
 }
 
+.alaska {
+  background-color: whitesmoke;
+  color: #333;
+  width: 100%;
+}
+
+.arizona {
+  background-color: #08626b;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.california {
+  background-color: #4a6830;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.florida {
+  background-color: #9e1c39;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.hawaii {
+  background-color: #c15027;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.mexico {
+  background-color: whitesmoke;
+  color: #333;
+  width: 100%;
+}
+
+.minnesota {
+  background-color: #08626b;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.new-york {
+  background-color: #4a6830;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.oregon {
+  background-color: #9e1c39;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.vermont {
+  background-color: #c15027;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.washington {
+  background-color: whitesmoke;
+  color: #333;
+  width: 100%;
+}
+
+.washington-dc {
+  background-color: #08626b;
+  color: #FFFFFF;
+  width: 100%;
+}
+
 footer {
   background-color: #333;
   color: #FFFFFF;
