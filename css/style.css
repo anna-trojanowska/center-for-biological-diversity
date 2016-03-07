@@ -12,30 +12,25 @@
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .grid-bottom {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  align-items: flex-end;
 }
 
 .grid-middle {
   -webkit-align-items: center;
   -ms-align-items: center;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
-  -ms-flex-align: stretch;
-      align-items: stretch;
+  align-items: stretch;
 }
 
 .opera-only :-o-prefocus, .grid {
@@ -537,8 +532,7 @@
 .content-fill {
   -ms-flex-grow: 2;
   -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-      flex-grow: 2;
+  flex-grow: 2;
   max-width: 100%;
   /* @bugfix: IE 10, 11 */
 }
@@ -546,8 +540,7 @@
 .content-shrink {
   -ms-align-self: center;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  align-self: center;
 }
 
 /*=====TYPOGRAPHY STYLING=====*/
@@ -892,6 +885,11 @@ header .btn-donate {
   scale: 1;
 }
 
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+
 @-webkit-viewport {
   width: device-width;
   scale: 1;
@@ -905,6 +903,7 @@ header .btn-donate {
 html {
   overflow-x: hidden;
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -918,10 +917,16 @@ html {
   display: none;
 }
 
-body {
+body:before, body:after {
+  content: "";
+  display: table;
   font-family: "Roboto";
   margin: 0;
   padding: 0;
+}
+
+body:after {
+  clear: both;
 }
 
 .img-flex {
@@ -970,6 +975,331 @@ body {
   height: 5em;
 }
 
+.media-2 img {
+  border-radius: 50%;
+  width: 400px;
+  z-index: 100;
+}
+
+.media-3 img {
+  border-radius: 50%;
+  width: 400px;
+}
+
+.img-gal {
+  border-radius: 50%;
+}
+
+article {
+  margin-bottom: 3rem;
+  position: relative;
+  *zoom: 1;
+}
+
+article:before, article:after {
+  content: "";
+  display: table;
+}
+
+article:after {
+  clear: both;
+}
+
+article section:first-of-type {
+  float: right;
+  height: 15em;
+}
+
+article section:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+.info {
+  height: 15em;
+}
+
+section {
+  -webkit-transition: .125s linear;
+  -moz-transition: .125s linear;
+  -ms-transition: .125s linear;
+  -o-transition: .125s linear;
+  transition: .125s linear;
+}
+
+input[type=checkbox] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+[for="toggle1"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle1"]:hover {
+  color: #646464;
+}
+
+[for="toggle1"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle1"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle1"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+[for="toggle2"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle2"]:hover {
+  color: #646464;
+}
+
+[for="toggle2"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle2"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle2"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+[for="toggle3"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle3"]:hover {
+  color: #646464;
+}
+
+[for="toggle3"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle3"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle3"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+[for="toggle4"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle4"]:hover {
+  color: #646464;
+}
+
+[for="toggle4"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle4"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle4"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+[for="toggle5"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle5"]:hover {
+  color: #646464;
+}
+
+[for="toggle5"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle5"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle5"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+[for="toggle6"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle6"]:hover {
+  color: #646464;
+}
+
+[for="toggle6"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle6"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle6"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+[for="toggle7"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle7"]:hover {
+  color: #646464;
+}
+
+[for="toggle7"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle7"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle7"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+[for="toggle8"] {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .65rem;
+  overflow: hidden;
+}
+
+[for="toggle8"]:hover {
+  color: #646464;
+}
+
+[for="toggle8"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure {
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="toggle8"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle8"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
 @media only screen and (min-width: 540px) {
   .banner-content {
     position: absolute;
@@ -1015,9 +1345,7 @@ body {
   position: absolute;
   top: 50%;
   cursor: pointer;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   text-align: center;
   width: 40px;
   z-index: 10;
@@ -1434,14 +1762,8 @@ input[placeholder="Enter Your Email"] {
   padding: 0;
   padding-left: 40px;
   padding-right: 40px;
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
+  column-count: 2;
   list-style-position: inside;
   list-style-type: none;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
+  column-gap: 40px;
 }
-
-/*# sourceMappingURL=style.css.map */

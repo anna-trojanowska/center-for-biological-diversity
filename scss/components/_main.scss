@@ -21,10 +21,15 @@ html {
   display: none;
 }
 
-body{
-  font-family: "Roboto";
-  @include zero;
+body:before, body:after {
+    content: "";
+    display: table;
+    font-family: "Roboto";
+    @include zero;
 }
+
+body:after { clear: both }
+
 
 .img-flex {
     display: block;
@@ -60,6 +65,311 @@ body{
     position: relative;
     height: 5em;
 }
+//------------------- Media Gallery
+.media-2{
+	img{
+		border-radius: 50%;
+		width: 400px;
+        z-index: 100;
+	}
+}
+
+.media-3{
+    img{
+        border-radius: 50%;
+        width: 400px;
+    }
+}
+
+.img-gal {
+	border-radius: 50%;
+}
+
+article {
+    margin-bottom: 3rem;
+    position: relative;
+    *zoom: 1;
+}
+
+article:before, article:after {
+    content: "";
+    display: table;
+}
+article:after { clear: both }
+
+article section:first-of-type {
+    float: right;
+    height:15em;
+}
+
+article section:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+.info {
+    height:15em;
+}
+section {
+    -webkit-transition: .125s linear;
+    -moz-transition: .125s linear;
+    -ms-transition: .125s linear;
+    -o-transition: .125s linear;
+    transition: .125s linear;
+}
+input[type=checkbox] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+[for="toggle1"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle1"]:hover {
+    color: rgb(100,100,100);
+}
+[for="toggle1"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle1"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle1"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+
+[for="toggle2"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle2"]:hover {
+    color: rgb(100,100,100);
+}
+[for="toggle2"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle2"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle2"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle3"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle3"]:hover {
+    color: rgb(100,100,100);
+}
+[for="toggle3"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle3"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle3"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle4"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle4"]:hover {
+    color: rgb(100,100,100);
+}
+[for="toggle4"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle4"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle4"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle5"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle5"]:hover {
+    color: rgb(100,100,100);
+}
+[for="toggle5"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle5"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle5"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle6"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle6"]:hover {
+    color: rgb(100,100,100);
+}
+[for="toggle6"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle6"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle6"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle7"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle7"]:hover {
+    color: rgb(100,100,100);
+}
+[for="toggle7"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle7"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle7"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle8"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle8"]:hover {
+    color: rgb(100,100,100);
+}
+
+[for="toggle8"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle8"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle8"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
 
 @media only screen and (min-width: 540px) {
     .banner-content {
@@ -70,6 +380,8 @@ body{
         text-align: left;
     }
 }
+
+
 
 // ------- CAROUSEL
 

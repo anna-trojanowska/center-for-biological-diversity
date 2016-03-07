@@ -852,8 +852,15 @@ body {
   z-index: 1000;
   color: #FFFFFF;
   display: block;
-  position: absolute;
+  position: relative;
   height: 5em; }
+
+.media-2 img {
+  border-radius: 50%; }
+
+.img-gal {
+  width: 300px;
+  border-radius: 50%; }
 
 @media only screen and (min-width: 540px) {
   .banner-content {
@@ -861,6 +868,12 @@ body {
 
   .banner-text {
     text-align: left; } }
+.carousel i {
+  z-index: 1000;
+  color: #333;
+  display: block;
+  position: absolute; }
+
 .carousel-inner {
   position: relative;
   overflow: hidden;
@@ -948,6 +961,9 @@ body {
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
 #carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
   color: #608a3c; }
+
+.circle-image {
+  border-radius: 50%; }
 
 .btn-learn-more {
   display: inline-block;
