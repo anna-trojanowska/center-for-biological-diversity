@@ -40,46 +40,28 @@ body{
 
 // ---------- BANNER
 
-.banner-content {
-    position: absolute;
+.main-banner-content {
+    margin-top: -8em;
+    padding-bottom: 2em;
 }
 
-.banner-text {
+.main-banner-text {
     color: $white;
     text-align: center;
+    font-weight: lighter;
 }
 
-.btn-take-action {
-    @include btn-take-action;
+.banner-link {
+    text-decoration: none;
 }
 
-.brief-content i {
-    padding-left: 0.4em; 
-    padding-right: 0.4em;
-    padding-top: 0.4em;
-    padding-bottom: 0.2em;
-    font-size: 5em;
-    color: $black;
-    background-color: $white;
-    border-radius: 50%;
-}
-
-@media only screen and (min-width: 540px) {
-    .banner-content {
-        position: absolute;
-    }
-
-    .banner-text{
-        text-align: left;
-    }
+.main-banner-text:hover,
+.main-banner-text:focus,
+.main-banner-text:active {
+    color: darken($white,15%);
 }
 
 // ------- CAROUSEL
-
-.elephant-banner-content {
-    position: absolute;
-    z-index: 1200;
-}
 
 .drop-shadow {
     filter: dropshadow((5px 5px 10px $black));
@@ -90,13 +72,19 @@ body{
     color: $white;
     display: block;
     position: absolute;
-    font-size: 10em;
+    font-size: 6em;
     margin-left: 0.2em;
     margin-top: -0.2em;
 }
 
 .carousel {
     margin-top: -1em;
+}
+
+@media only screen and (min-width: 540px) {
+    .carousel i {
+       font-size: 10em;
+    }  
 }
 
 @media only screen and (min-width: 700px) {
@@ -336,6 +324,47 @@ body{
     background-color: $grey;
 }
 
+.brief-content i {
+    padding-left: 0.4em; 
+    padding-right: 0.4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
+    font-size: 5em;
+    color: $black;
+    background-color: $white;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+    .brief-content {
+        padding: 4em;
+    }
+    
+    .ringtones-content {
+        padding: 4em;
+    }
+    
+    .videos-content {
+        padding: 4em;
+    }   
+}
+
+@media only screen and (min-width: 960px) {
+    .brief-content {
+        padding: 0em;
+    }
+    
+    .ringtones-content {
+        padding: 0em;
+    }
+    
+    .videos-content {
+        padding: 0em;
+    }
+    
+    
+}
+
 // -----ABOUT PAGE
 
 .about-page-intro {
@@ -494,14 +523,20 @@ input[placeholder="Enter Your Email"]{
     box-sizing: border-box;
 }
 
-
-@media only screen and (min-width: 700px) {  
+@media only screen and (min-width: 608px) { 
     .social-media {
         margin-left: 0;
         margin-right: 0;
-        padding: 1em;
+        padding-left: 6em;
+        padding-right: 6em;
     }
-    
+}
+
+@media only screen and (min-width: 900px) {
+    .social-media {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -512,13 +547,7 @@ input[placeholder="Enter Your Email"]{
     }
     
     .social-media {
-        margin-left: 0;
-        margin-right: 0;
         padding: 0;
-    }
-    
-    .btn-social {
-        margin: 1em;
     }
 }
     

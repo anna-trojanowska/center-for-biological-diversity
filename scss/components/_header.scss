@@ -216,6 +216,10 @@ header .btn-donate {
     font-size: 2em;
 }
 
+.sidebar-close i:hover {
+    color: darken($white, 15%);
+}
+
 .sidebar-close {
     padding: 0.8em;
 }
