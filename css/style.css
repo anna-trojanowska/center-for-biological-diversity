@@ -1225,7 +1225,7 @@ body {
 }
 
 .main-banner-content {
-  margin-top: -8em;
+  margin-top: -6em;
   padding-bottom: 2em;
 }
 
@@ -1233,6 +1233,7 @@ body {
   color: #FFFFFF;
   text-align: center;
   font-weight: lighter;
+  line-height: 1em;
 }
 
 .banner-link {
@@ -1416,6 +1417,7 @@ body {
   padding-bottom: 0.4em;
   padding-left: 0.8em;
   padding-right: 0.8em;
+  margin-bottom: 0.2em;
 }
 
 .btn-join-us:hover, .btn-join-us:active, .btn-join-us:focus {
@@ -1697,6 +1699,38 @@ body {
   color: #FFFFFF;
   z-index: 100;
   position: absolute;
+  margin-top: 3.5em;
+  line-height: 1em;
+  letter-spacing: -0.05em;
+}
+
+.donate-banner i {
+  z-index: 1000;
+  color: #FFFFFF;
+  display: block;
+  position: absolute;
+  font-size: 6em;
+  margin-left: 0.2em;
+  margin-top: -0.2em;
+}
+
+@media only screen and (min-width: 540px) {
+  .donate-banner i {
+    font-size: 10em;
+  }
+  .donate-banner-text {
+    letter-spacing: 0em;
+    margin-top: 14em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .donate-banner i {
+    display: none;
+  }
+  .donate-banner-text {
+    margin-top: 0em;
+  }
 }
 
 .billing-info {
@@ -1787,6 +1821,25 @@ input[type="email-donate"] {
   background-color: #af5517;
 }
 
+.campaign-banner-text {
+  color: #FFFFFF;
+  z-index: 100;
+  position: absolute;
+  margin-top: 2.5em;
+  line-height: 1em;
+  letter-spacing: -0.05em;
+}
+
+.campaign-directory-banner i {
+  z-index: 1000;
+  color: #FFFFFF;
+  display: block;
+  position: absolute;
+  font-size: 6em;
+  margin-left: 0.2em;
+  margin-top: -0.2em;
+}
+
 .campaign-directory-banner {
   display: block;
   width: 100%;
@@ -1794,10 +1847,23 @@ input[type="email-donate"] {
   margin-top: 0.18em;
 }
 
-.campaign-banner-text {
-  color: #FFFFFF;
-  z-index: 100;
-  position: absolute;
+@media only screen and (min-width: 540px) {
+  .campaign-directory-banner i {
+    font-size: 10em;
+  }
+  .campaign-banner-text {
+    margin-top: 8em;
+    letter-spacing: 0em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .campaign-directory-banner i {
+    display: none;
+  }
+  .campaign-banner-text {
+    margin-top: 0em;
+  }
 }
 
 .two-column-always {

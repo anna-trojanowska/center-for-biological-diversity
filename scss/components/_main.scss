@@ -41,7 +41,7 @@ body{
 // ---------- BANNER
 
 .main-banner-content {
-    margin-top: -8em;
+    margin-top: -6em;
     padding-bottom: 2em;
 }
 
@@ -49,6 +49,7 @@ body{
     color: $white;
     text-align: center;
     font-weight: lighter;
+    line-height: 1em;
 }
 
 .banner-link {
@@ -210,6 +211,7 @@ body{
 
 .btn-join-us {
     @include btn-join-us;
+    margin-bottom: 0.2em;
 }
 
 .btn-sign-petition {
@@ -438,6 +440,42 @@ body{
     color:$white;
     z-index: 100;
     position: absolute;
+    margin-top: 3.5em;
+    line-height: 1em;
+    letter-spacing: -0.05em;
+    
+}
+
+.donate-banner i {
+    z-index: 1000;
+    color: $white;
+    display: block;
+    position: absolute;
+    font-size: 6em;
+    margin-left: 0.2em;
+    margin-top: -0.2em;
+}
+
+@media only screen and (min-width: 540px) {
+    .donate-banner i {
+       font-size: 10em;
+    }
+    
+    .donate-banner-text {
+        letter-spacing: 0em;
+        margin-top: 14em;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    .donate-banner i {
+        display: none;
+    }   
+    
+    .donate-banner-text {
+        margin-top: 0em;
+    }
 }
 
 .billing-info {
@@ -448,6 +486,7 @@ body{
 
 .donate-contact li {
     list-style-type: none;
+    
 }
 
 @media only screen and (min-width: 700px) {
@@ -522,7 +561,26 @@ input[type="email-donate"]{
 
 
 // ------ CAMPAIGN DIRECTORY PAGE
-    
+   
+.campaign-banner-text {
+    color:$white;
+    z-index: 100;
+    position: absolute;
+    margin-top: 2.5em;
+    line-height: 1em;
+    letter-spacing: -0.05em;
+}
+
+.campaign-directory-banner i {
+    z-index: 1000;
+    color: $white;
+    display: block;
+    position: absolute;
+    font-size: 6em;
+    margin-left: 0.2em;
+    margin-top: -0.2em;
+}
+
 .campaign-directory-banner {
     display: block;
     width: 100%;
@@ -530,10 +588,25 @@ input[type="email-donate"]{
     margin-top: 0.18em;
 }
 
-.campaign-banner-text {
-    color:$white;
-    z-index: 100;
-    position: absolute;
+@media only screen and (min-width: 540px) {
+    .campaign-directory-banner i {
+       font-size: 10em;
+    }
+    
+    .campaign-banner-text {
+        margin-top: 8em;
+        letter-spacing: 0em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .campaign-directory-banner i {
+        display: none;
+    }   
+    
+    .campaign-banner-text {
+        margin-top: 0em;
+    }
 }
 
 .two-column-always {
