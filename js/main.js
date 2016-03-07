@@ -3,7 +3,7 @@
 $(function () {
     $('body').removeClass('noscript');
     
-    $('.toggle-btn, .close-btn').click(function(){
+    $('.toggle, .close-btn').click(function(){
         toggleNav();
     });
     $('.nav-link a').click(function (e) {

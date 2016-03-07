@@ -863,10 +863,11 @@ header .btn-donate {
   bottom: 0;
   height: 100%;
   padding: 0;
+  z-index: 10000;
+  background-color: #608a3c;
 }
 
 .drop-down-navigation {
-  display: none;
   over-flow: hidden;
 }
 
@@ -1054,6 +1055,38 @@ header .btn-donate {
 }
 
 @media only screen and (max-width: 540px) {
+  .site-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+  }
+  .sliding-canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    transition: all 300ms ease-in-out;
+  }
+  [data-state="slide-open"] .sliding-canvas {
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  [data-state="slide-open"] {
+    overflow: visible;
+  }
+  .sidebar-1 {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 0;
+  }
   .sidebar-menu {
     font-size: 1em;
     font-weight: 400;
@@ -1104,7 +1137,6 @@ header .btn-donate {
     bottom: 0;
     height: 100%;
     padding: 0;
-    background-color: #608a3c;
   }
   header {
     position: relative;
@@ -2216,6 +2248,10 @@ input[placeholder="Enter Your Email"] {
   }
 }
 
+.gal {
+  padding: 1em;
+}
+
 .center-in-the-news-text {
   color: #FFFFFF;
   z-index: 100;
@@ -2258,6 +2294,9 @@ input[placeholder="Enter Your Email"] {
 }
 
 @media only screen and (min-width: 700px) {
+  .gal {
+    padding: 4em;
+  }
   .center-in-the-news-banner i {
     display: none;
   }
@@ -2270,10 +2309,6 @@ input[placeholder="Enter Your Email"] {
   .center-in-the-news {
     padding: 4em;
   }
-}
-
-.gal {
-  height: auto;
 }
 
 .media-2 img {
@@ -2307,10 +2342,6 @@ article:after {
   clear: both;
 }
 
-.gal {
-  margin: 5em 5em 10em;
-}
-
 .info {
   height: 15em;
 }
@@ -2331,7 +2362,6 @@ input[type=checkbox] {
 }
 
 [for="toggle1"] {
-  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2368,7 +2398,6 @@ input[type=checkbox]:checked ~ [for="toggle1"] span:last-of-type {
 }
 
 [for="toggle2"] {
-  position: absolute;
   left: 0;
   height: 25em;
   width: 100%;
@@ -2406,7 +2435,6 @@ input[type=checkbox]:checked ~ [for="toggle2"] span:last-of-type {
 }
 
 [for="toggle3"] {
-  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2443,7 +2471,6 @@ input[type=checkbox]:checked ~ [for="toggle3"] span:last-of-type {
 }
 
 [for="toggle4"] {
-  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2480,7 +2507,6 @@ input[type=checkbox]:checked ~ [for="toggle4"] span:last-of-type {
 }
 
 [for="toggle5"] {
-  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2517,7 +2543,6 @@ input[type=checkbox]:checked ~ [for="toggle5"] span:last-of-type {
 }
 
 [for="toggle6"] {
-  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2554,7 +2579,6 @@ input[type=checkbox]:checked ~ [for="toggle6"] span:last-of-type {
 }
 
 [for="toggle7"] {
-  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2597,7 +2621,6 @@ input[type=checkbox]:checked ~ [for="toggle7"] span:last-of-type {
 }
 
 [for="toggle8"] {
-  position: absolute;
   left: 0;
   width: 100%;
   text-align: center;

@@ -951,6 +951,10 @@ input[placeholder="Enter Your Email"]{
 
 //------------------- Media Gallery
 
+.gal {
+    padding: 1em;
+}
+
 .center-in-the-news-text {
     color:$white;
     z-index: 100;
@@ -994,6 +998,10 @@ input[placeholder="Enter Your Email"]{
 }
 
 @media only screen and (min-width: 700px) {
+    .gal {
+        padding: 4em;
+}
+
     .center-in-the-news-banner i {
         display: none;
     }   
@@ -1009,10 +1017,6 @@ input[placeholder="Enter Your Email"]{
     .center-in-the-news {
         padding: 4em;
     }
-}
-
-.gal {
-    height: auto;
 }
 
 .media-2{
@@ -1045,16 +1049,15 @@ article:before, article:after {
     content: "";
     display: table;
 }
-article:after { clear: both }
 
-.gal {
-    margin: 5em 5em 10em;
-
+article:after { 
+    clear: both 
 }
 
 .info {
     height:15em;
 }
+
 section {
     -webkit-transition: .125s linear;
     -moz-transition: .125s linear;
@@ -1062,6 +1065,7 @@ section {
     -o-transition: .125s linear;
     transition: .125s linear;
 }
+
 input[type=checkbox] {
     border: 0;
     clip: rect(0 0 0 0);
@@ -1074,7 +1078,6 @@ input[type=checkbox] {
 }
 
 [for="toggle1"] {
-    position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
@@ -1109,7 +1112,6 @@ input[type=checkbox]:checked ~ [for="toggle1"] span:last-of-type {
 
 
 [for="toggle2"] {
-    position: absolute;
     left: 0;
     height:25em;
     width: 100%;
@@ -1145,7 +1147,6 @@ input[type=checkbox]:checked ~ [for="toggle2"] span:last-of-type {
 }
 
 [for="toggle3"] {
-    position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
@@ -1181,7 +1182,6 @@ input[type=checkbox]:checked ~ [for="toggle3"] span:last-of-type {
 }
 
 [for="toggle4"] {
-    position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
@@ -1217,7 +1217,6 @@ input[type=checkbox]:checked ~ [for="toggle4"] span:last-of-type {
 }
 
 [for="toggle5"] {
-    position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
@@ -1230,6 +1229,7 @@ input[type=checkbox]:checked ~ [for="toggle4"] span:last-of-type {
     background: none;
     z-index:100;
 }
+
 [for="toggle5"] span:last-of-type {
     display: none;
     visibility: hidden;
@@ -1252,7 +1252,6 @@ input[type=checkbox]:checked ~ [for="toggle5"] span:last-of-type {
 }
 
 [for="toggle6"] {
-    position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
@@ -1265,13 +1264,13 @@ input[type=checkbox]:checked ~ [for="toggle5"] span:last-of-type {
     background: none;
     z-index:100;
 }
+
 [for="toggle6"] span:last-of-type {
     display: none;
     visibility: hidden;
     background:white;
     height: 15em;
     border-radius: 5%;
-
 }
 
 
@@ -1288,7 +1287,6 @@ input[type=checkbox]:checked ~ [for="toggle6"] span:last-of-type {
 }
 
 [for="toggle7"] {
-    position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
@@ -1328,7 +1326,6 @@ input[type=checkbox]:checked ~ [for="toggle7"] span:last-of-type {
 }
 
 [for="toggle8"] {
-    position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
