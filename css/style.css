@@ -592,21 +592,21 @@ fieldset, pre, table {
 
 h1, .exa {
   font-size: 1.8020rem;
-  line-height: 1.6648;
+  line-height: 1em;
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
 }
 
 h2, .peta {
   font-size: 1.6018rem;
-  line-height: 1.2;
+  line-height: 1em;
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
 }
 
 h3, .tera {
   font-size: 1.4238rem;
-  line-height: 1.0535;
+  line-height: 1em;
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -774,8 +774,8 @@ sub {
   display: none;
 }
 
-.navigation li a {
-  display: inline-block;
+.navigation li {
+  display: none;
 }
 
 .navigation i {
@@ -807,7 +807,7 @@ input[type="checkbox"] {
 }
 
 header .btn-donate {
-  position: relative;
+  position: absolute;
 }
 
 .icon-menu {
@@ -867,6 +867,11 @@ header .btn-donate {
   bottom: 0;
   height: 100%;
   padding: 0;
+}
+
+.drop-down-navigation {
+  display: none;
+  over-flow: hidden;
 }
 
 .sidebar-1 {
@@ -1056,7 +1061,7 @@ header .btn-donate {
   margin-top: 1em;
 }
 
-@media (max-width: 540px) {
+@media only screen and (max-width: 540px) {
   .sidebar-menu {
     font-size: 1em;
     font-weight: 400;
@@ -1118,6 +1123,9 @@ header .btn-donate {
     text-align: center;
     font-size: 5vw;
     color: #FFFFFF;
+  }
+  header .btn-donate {
+    position: relative;
   }
   .nav-wrapper {
     height: 4.9em;
@@ -1222,6 +1230,12 @@ body {
   width: 400px;
   height: 400px;
   padding: 5em;
+}
+
+.span {
+  -webkit-column-span: all;
+     -moz-column-span: all;
+          column-span: all;
 }
 
 .main-banner-content {
@@ -1866,15 +1880,6 @@ input[type="email-donate"] {
   }
 }
 
-.two-column-always {
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-}
-
 .endangered-species {
   padding: 1em;
   background-color: whitesmoke;
@@ -1913,6 +1918,12 @@ input[type="email-donate"] {
 @media only screen and (min-width: 700px) {
   .endangered-species {
     padding: 4em;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
   }
   .climate-law {
     padding: 4em;
@@ -1925,6 +1936,12 @@ input[type="email-donate"] {
   }
   .public-lands {
     padding: 4em;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
   }
   .environmental-health {
     padding: 4em;

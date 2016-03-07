@@ -38,6 +38,10 @@ body{
 	padding: 5em;
 }
 
+.span {
+    column-span: all;
+}
+
 // ---------- BANNER
 
 .main-banner-content {
@@ -609,11 +613,6 @@ input[type="email-donate"]{
     }
 }
 
-.two-column-always {
-        column-count: 2;
-        column-gap: 40px;
-}
-
 .endangered-species {
     padding: 1em;
     background-color: $grey;
@@ -652,6 +651,8 @@ input[type="email-donate"]{
 @media only screen and (min-width: 700px) {
     .endangered-species {
         padding: 4em;
+        column-count: 2;
+        column-gap: 40px;
     }
     
     .climate-law {
@@ -668,6 +669,8 @@ input[type="email-donate"]{
     
     .public-lands {
         padding: 4em; 
+        column-count: 2;
+        column-gap: 40px;
     }
     
     .environmental-health {
