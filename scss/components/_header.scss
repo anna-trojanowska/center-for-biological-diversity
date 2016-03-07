@@ -13,7 +13,7 @@
 .navigation i {
     color: $medium-green;
     font-size: 3em;
-    margin-left: 1em;
+    margin: 0.5em;
 }
 
 input[type="checkbox"]{
@@ -26,10 +26,6 @@ input[type="checkbox"]{
 
 header .btn-donate {
     position: absolute; 
-}
-
-.icon-menu {
-    margin-top: 2em; 
 }
 
 
@@ -227,10 +223,6 @@ header .btn-donate {
 
 .sidebar-close {
     padding: 0.8em;
-}
-
-.toggle {
-    margin-top: 1em;
 }
 
 @media only screen and (max-width: 540px) {

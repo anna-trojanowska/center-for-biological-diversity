@@ -781,7 +781,7 @@ sub {
 .navigation i {
   color: #608a3c;
   font-size: 3em;
-  margin-left: 1em;
+  margin: 0.5em;
 }
 
 input[type="checkbox"] {
@@ -808,10 +808,6 @@ input[type="checkbox"] {
 
 header .btn-donate {
   position: absolute;
-}
-
-.icon-menu {
-  margin-top: 2em;
 }
 
 .site-wrapper {
@@ -1057,10 +1053,6 @@ header .btn-donate {
   padding: 0.8em;
 }
 
-.toggle {
-  margin-top: 1em;
-}
-
 @media only screen and (max-width: 540px) {
   .sidebar-menu {
     font-size: 1em;
@@ -1276,7 +1268,7 @@ body {
 }
 
 .carousel {
-  margin-top: -1em;
+  margin-top: -1.3em;
 }
 
 @media only screen and (min-width: 540px) {
@@ -1287,7 +1279,7 @@ body {
 
 @media only screen and (min-width: 700px) {
   .carousel {
-    margin-top: 0em;
+    margin-top: -0.2em;
   }
   .carousel i {
     display: none;
@@ -1706,7 +1698,7 @@ body {
   display: block;
   width: 100%;
   z-index: 0;
-  margin-top: 0.18em;
+  margin-top: -1.3em;
 }
 
 .donate-banner-text {
@@ -1728,6 +1720,16 @@ body {
   margin-top: -0.2em;
 }
 
+.billing-info {
+  padding: 1em;
+  background-color: #4a6830;
+  color: #FFFFFF;
+}
+
+.donate-contact li {
+  list-style-type: none;
+}
+
 @media only screen and (min-width: 540px) {
   .donate-banner i {
     font-size: 10em;
@@ -1745,19 +1747,9 @@ body {
   .donate-banner-text {
     margin-top: 0em;
   }
-}
-
-.billing-info {
-  padding: 1em;
-  background-color: #4a6830;
-  color: #FFFFFF;
-}
-
-.donate-contact li {
-  list-style-type: none;
-}
-
-@media only screen and (min-width: 700px) {
+  .donate-banner {
+    margin-top: -0.2em;
+  }
   .gift {
     padding-top: 2em;
     padding-bottom: 2em;
