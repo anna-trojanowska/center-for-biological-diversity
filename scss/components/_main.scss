@@ -685,78 +685,133 @@ input[type="email-donate"]{
 }
 // ------- CONTACT
 
+.contact-banner-text {
+    color:$white;
+    z-index: 100;
+    position: absolute;
+    margin-top: 2.5em;
+    line-height: 1em;
+    letter-spacing: -0.05em;
+}
+
+.contact-banner i {
+    z-index: 1000;
+    color: $white;
+    display: block;
+    position: absolute;
+    font-size: 6em;
+    margin-left: 0.2em;
+    margin-top: -0.2em;
+}
+
+.center-in-the-news-banner {
+    display: block;
+    width: 100%;
+    z-index: 0;
+    margin-top: -1.3em;
+}
+
+.center-in-the-news {
+    padding: 1em;
+    background-color: $grey;
+}
+
+@media only screen and (min-width: 540px) {
+    .center-in-the-news-banner i {
+       font-size: 10em;
+    }
+    
+    .contact-banner-text {
+        margin-top: 8em;
+        letter-spacing: 0em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .contact-banner i {
+        display: none;
+    }   
+    
+    .contact-banner {
+        margin-top: -0.2em;
+    }
+    
+    .contact-banner-text {
+        margin-top: 0em;
+    }
+}
 
 
 .alaska {
     background-color: $grey;
     color: $black;
-    width: 100%;
+    
 }
 
 .arizona {
     background-color: $dark-blue;
     color: $white;
-    width: 100%;
+   
 }
 
 .california {
     background-color: $dark-green;
     color: $white;
-    width: 100%;
+   
 }
 
 .florida {
     background-color: $dark-red;
     color: $white;
-    width: 100%;
+    
 }
 
 .hawaii {
     background-color: $dark-orange;
     color: $white;
-    width: 100%;
+   
 }
 
 .mexico {
     background-color: $grey;
     color: $black; 
-    width: 100%;
+   
 }
 
 .minnesota {
     background-color: $dark-blue;
     color: $white;
-    width: 100%;
+    
 }
 
 .new-york {
     background-color: $dark-green;
     color: $white;
-    width: 100%;
+
 }
 
 .oregon {
     background-color: $dark-red;
     color: $white;
-    width: 100%;
+ 
 }
 
 .vermont {
     background-color: $dark-orange;
     color: $white;
-    width: 100%;
+   
 }
 
 .washington {
     background-color: $grey;
     color: $black;
-    width: 100%;
+    
 }
 
 .washington-dc {
     background-color: $dark-blue;
     color: $white;
-    width: 100%;
+    
 }
 
 @media only screen and (min-width: 540px) {
@@ -893,3 +948,422 @@ input[placeholder="Enter Your Email"]{
         padding: 0;
     }
 }
+
+//------------------- Media Gallery
+
+.center-in-the-news-text {
+    color:$white;
+    z-index: 100;
+    position: absolute;
+    margin-top: 2.5em;
+    line-height: 1em;
+    letter-spacing: -0.05em;
+}
+
+.center-in-the-news-banner i {
+    z-index: 1000;
+    color: $white;
+    display: block;
+    position: absolute;
+    font-size: 6em;
+    margin-left: 0.2em;
+    margin-top: -0.2em;
+}
+
+.center-in-the-news-banner {
+    display: block;
+    width: 100%;
+    z-index: 0;
+    margin-top: -1.3em;
+}
+
+.center-in-the-news {
+    padding: 1em;
+    background-color: $grey;
+}
+
+@media only screen and (min-width: 540px) {
+    .center-in-the-news-banner i {
+       font-size: 10em;
+    }
+    
+    .center-in-the-news-text {
+        margin-top: 8em;
+        letter-spacing: 0em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .center-in-the-news-banner i {
+        display: none;
+    }   
+    
+    .center-in-the-news-text {
+        margin-top: 0em;
+    }
+    
+    .center-in-the-news-banner {
+        margin-top: -0.2em;
+    }
+    
+    .center-in-the-news {
+        padding: 4em;
+    }
+}
+
+.gal {
+    height: auto;
+}
+
+.media-2{
+    img{
+        border-radius: 50%;
+        width: 400px;
+        z-index: 100;
+        padding: 0 0 5em;
+    }
+}
+
+.media-3{
+    img{
+        border-radius: 50%;
+        width: 400px;
+    }
+}
+
+.img-gal {
+    border-radius: 50%;
+}
+
+article {
+    margin-bottom: 3rem;
+    position: relative;
+    *zoom: 1;
+}
+
+article:before, article:after {
+    content: "";
+    display: table;
+}
+article:after { clear: both }
+
+.gal {
+    margin: 5em 5em 10em;
+
+}
+
+.info {
+    height:15em;
+}
+section {
+    -webkit-transition: .125s linear;
+    -moz-transition: .125s linear;
+    -ms-transition: .125s linear;
+    -o-transition: .125s linear;
+    transition: .125s linear;
+}
+input[type=checkbox] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+[for="toggle1"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle1"]:hover {
+    color: rgb(100,100,100);
+    background: none;
+    z-index:100;
+}
+[for="toggle1"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 20em;
+    border-radius: 5%;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle1"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle1"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+
+[for="toggle2"] {
+    position: absolute;
+    left: 0;
+    height:25em;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow: hidden;
+}
+
+[for="toggle2"]:hover {
+    color: rgb(100,100,100);
+    z-index:100;
+    background:none;
+}
+[for="toggle2"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 25em;
+    border-radius: 5%;
+
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle2"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle2"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle3"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle3"]:hover {
+    color: rgb(100,100,100);
+    z-index:100;
+    background:none;
+}
+[for="toggle3"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 22em;
+    border-radius: 5%;
+
+}
+
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle3"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle3"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle4"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle4"]:hover {
+    color: rgb(100,100,100);
+    background: none;
+    z-index:100;
+}
+
+[for="toggle4"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 22em;
+    border-radius: 5%;
+
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle4"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle4"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle5"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle5"]:hover {
+    color: rgb(100,100,100);
+    background: none;
+    z-index:100;
+}
+[for="toggle5"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 22em;
+    border-radius:5%;
+}
+
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle5"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle5"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle6"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle6"]:hover {
+    color: rgb(100,100,100);
+    background: none;
+    z-index:100;
+}
+[for="toggle6"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 15em;
+    border-radius: 5%;
+
+}
+
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle6"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle6"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle7"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle7"]:hover {
+    color: rgb(100,100,100);
+    background: none;
+    z-index:150;
+}
+[for="toggle7"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 25em;
+    border-radius: 5%;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle7"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle7"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+[for="toggle8"] {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    overflow:hidden;
+}
+
+[for="toggle8"]:hover {
+    color: rgb(100,100,100);
+    background: none;
+    z-index:100;
+}
+
+[for="toggle8"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+    background:white;
+    height: 18em;
+    border-radius: 5%;
+
+}
+
+input[type=checkbox]:checked ~ figure { width: 100% }
+
+input[type=checkbox]:checked ~ [for="toggle8"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="toggle8"] span:last-of-type {
+    display: block;
+    visibility: visible;
+    background:white;
+    height: 18em;
+    border-radius: 5%;
+}
+
+
