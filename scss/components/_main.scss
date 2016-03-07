@@ -526,6 +526,7 @@ input[type=checkbox] {
     visibility: hidden;
     background:white;
     height: 20em;
+    border-radius: 5%;
 }
 
 input[type=checkbox]:checked ~ figure { width: 100% }
@@ -560,7 +561,9 @@ input[type=checkbox]:checked ~ [for="toggle1"] span:last-of-type {
     display: none;
     visibility: hidden;
     background:white;
-    height: 28em;
+    height: 25em;
+    border-radius: 5%;
+
 }
 
 input[type=checkbox]:checked ~ figure { width: 100% }
@@ -594,6 +597,8 @@ input[type=checkbox]:checked ~ [for="toggle2"] span:last-of-type {
     visibility: hidden;
     background:white;
     height: 22em;
+    border-radius: 5%;
+
 }
 
 
@@ -629,6 +634,8 @@ input[type=checkbox]:checked ~ [for="toggle3"] span:last-of-type {
     visibility: hidden;
     background:white;
     height: 22em;
+    border-radius: 5%;
+
 }
 
 input[type=checkbox]:checked ~ figure { width: 100% }
@@ -697,6 +704,8 @@ input[type=checkbox]:checked ~ [for="toggle5"] span:last-of-type {
     visibility: hidden;
     background:white;
     height: 15em;
+    border-radius: 5%;
+
 }
 
 
@@ -731,6 +740,7 @@ input[type=checkbox]:checked ~ [for="toggle6"] span:last-of-type {
     visibility: hidden;
     background:white;
     height: 25em;
+    border-radius: 5%;
 }
 
 input[type=checkbox]:checked ~ section {
@@ -771,6 +781,8 @@ input[type=checkbox]:checked ~ [for="toggle7"] span:last-of-type {
     visibility: hidden;
     background:white;
     height: 18em;
+    border-radius: 5%;
+
 }
 
 input[type=checkbox]:checked ~ figure { width: 100% }
@@ -785,6 +797,8 @@ input[type=checkbox]:checked ~ [for="toggle8"] span:last-of-type {
     visibility: visible;
     background:white;
     height: 18em;
+    border-radius: 5%;
+
 }
 
 
