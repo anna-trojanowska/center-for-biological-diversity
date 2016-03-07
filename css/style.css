@@ -789,6 +789,7 @@ input[type="checkbox"] {
 }
 
 .btn-donate {
+  font-weight: bold;
   display: inline-block;
   background-color: #e4792e;
   text-decoration: none;
@@ -1386,6 +1387,7 @@ body {
 }
 
 .btn-learn-more {
+  font-weight: bold;
   display: inline-block;
   background-color: #333;
   text-decoration: none;
@@ -1403,6 +1405,7 @@ body {
 }
 
 .btn-join-us {
+  font-weight: bold;
   display: inline-block;
   background-color: #333;
   text-decoration: none;
@@ -1420,6 +1423,7 @@ body {
 }
 
 .btn-sign-petition {
+  font-weight: bold;
   display: inline-block;
   background-color: #333;
   text-decoration: none;
@@ -1437,6 +1441,7 @@ body {
 }
 
 .btn-read-more {
+  font-weight: bold;
   display: inline-block;
   background-color: #333;
   text-decoration: none;
@@ -1454,6 +1459,7 @@ body {
 }
 
 .btn-watch-more {
+  font-weight: bold;
   display: inline-block;
   background-color: #333;
   text-decoration: none;
@@ -1471,6 +1477,7 @@ body {
 }
 
 .btn-listen {
+  font-weight: bold;
   display: inline-block;
   background-color: #333;
   text-decoration: none;
@@ -1487,11 +1494,11 @@ body {
   background-color: #0d0d0d;
 }
 
-.press {
+.link {
   color: #FFFFFF;
 }
 
-.press:hover {
+.link:hover {
   color: #cccccc;
 }
 
@@ -1621,10 +1628,7 @@ body {
 .about-page-intro {
   background-color: whitesmoke;
   margin-top: 0.18em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
 }
 
 .about-page-intro-content {
@@ -1677,67 +1681,96 @@ body {
   }
 }
 
-footer {
-  background-color: #333;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 2em;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer a:visited {
-  color: #FFFFFF;
-}
-
-.footer-donate {
+.gift {
   padding: 1em;
+  background-color: whitesmoke;
 }
 
-.footer-contact {
-  padding: 2em;
-  border-top: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
+.donate-banner {
+  display: block;
+  width: 100%;
+  z-index: 0;
+  margin-top: 0.18em;
+}
+
+.donate-banner-text {
+  color: #FFFFFF;
   z-index: 100;
+  position: absolute;
 }
 
-.footer-join {
+.billing-info {
   padding: 1em;
+  background-color: #4a6830;
+  color: #FFFFFF;
 }
 
-.social {
-  margin-left: 0em;
+.donate-contact li {
+  list-style-type: none;
 }
 
-.btn-social {
-  background-color: #FFFFFF;
-  text-decoration: none;
-  padding-left: 0.6em;
-  padding-right: 0.6em;
-  padding-top: 0.4em;
-  padding-bottom: 0.2em;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 1px;
-  text-align: center;
+@media only screen and (min-width: 700px) {
+  .gift {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+  .billing-info {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
 }
 
-.btn-social:hover,
-.btn-social:active,
-.btn-social:focus {
-  background-color: #cccccc;
+@media only screen and (min-width: 1000px) {
+  .gift {
+    padding-left: 14em;
+    padding-right: 14em;
+  }
+  .billing-info {
+    padding-left: 14em;
+    padding-right: 14em;
+  }
 }
 
-.btn-social i {
-  vertical-align: middle;
-  font-size: 1em;
-  color: #333;
-  text-align: center;
+.width {
+  width: 100%;
+  height: 3em;
+  outline: solid 1px whitesmoke;
+  border-style: none;
+  margin-bottom: 0.5em;
 }
 
-.btn-donate {
+.width:focus {
+  outline: 3px solid #e4792e;
+}
+
+.form-title {
+  text-transform: uppercase;
+  margin-top: 0.5em;
+}
+
+.side-form {
+  position: relative;
+  padding-bottom: 4em;
+}
+
+.form-block {
+  display: block;
+}
+
+input[type="email-donate"] {
+  width: 100%;
+}
+
+.text-area {
+  width: 100%;
+}
+
+.btn-submit {
+  font-weight: bold;
   display: inline-block;
   background-color: #e4792e;
   text-decoration: none;
@@ -1750,81 +1783,8 @@ footer a:visited {
   padding-right: 1.5em;
 }
 
-.btn-donate:hover, .btn-donate:active, .btn-donate:focus {
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus {
   background-color: #af5517;
-}
-
-.btn-updates {
-  display: inline-block;
-  background-color: #608a3c;
-  text-decoration: none;
-  color: #FFFFFF;
-  top: 0;
-  right: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.btn-updates:hover, .btn-updates:active, .btn-updates:focus {
-  background-color: #3b5525;
-}
-
-.copyright {
-  padding-top: 4em;
-  text-align: center;
-  font-size: 0.6em;
-  margin: 0;
-  letter-spacing: 0.2em;
-}
-
-input[type="submit"] {
-  -webkit-appearance: none;
-  cursor: pointer;
-  border: 0;
-}
-
-input[type="email"] {
-  -webkit-appearance: none;
-  cursor: pointer;
-  border: 0;
-  width: 198px;
-  height: 3em;
-}
-
-input[placeholder="Enter Your Email"] {
-  padding-left: 0.8em;
-  display: block;
-  margin: 1em auto;
-  box-sizing: border-box;
-}
-
-@media only screen and (min-width: 608px) {
-  .social-media {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 6em;
-    padding-right: 6em;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .social-media {
-    padding-left: 14em;
-    padding-right: 14em;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  .footer-contact {
-    border: 0;
-    border-left: solid #FFFFFF;
-    border-right: solid #FFFFFF;
-  }
-  .social-media {
-    padding: 0;
-  }
 }
 
 .campaign-directory-banner {
@@ -1902,6 +1862,161 @@ input[placeholder="Enter Your Email"] {
   }
   .environmental-health {
     padding: 4em;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #FFFFFF;
+}
+
+.footer-donate {
+  padding: 1em;
+}
+
+.footer-contact {
+  padding: 2em;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  z-index: 100;
+}
+
+.footer-join {
+  padding: 1em;
+}
+
+.social {
+  margin-left: 0em;
+}
+
+.btn-social {
+  background-color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  padding-top: 0.4em;
+  padding-bottom: 0.2em;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1px;
+  text-align: center;
+}
+
+.btn-social:hover,
+.btn-social:active,
+.btn-social:focus {
+  background-color: #cccccc;
+}
+
+.btn-social i {
+  vertical-align: middle;
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
+
+.btn-donate {
+  font-weight: bold;
+  display: inline-block;
+  background-color: #e4792e;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.btn-donate:hover, .btn-donate:active, .btn-donate:focus {
+  background-color: #af5517;
+}
+
+.btn-updates {
+  font-weight: bold;
+  display: inline-block;
+  background-color: #608a3c;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.btn-updates:hover, .btn-updates:active, .btn-updates:focus {
+  background-color: #3b5525;
+}
+
+.copyright {
+  padding-top: 4em;
+  text-align: center;
+  font-size: 0.6em;
+  margin: 0;
+  letter-spacing: 0.2em;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: 0;
+}
+
+input[type="email"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: 0;
+  width: 198px;
+  height: 3em;
+}
+
+input[placeholder="Enter Your Email"] {
+  padding-left: 0.8em;
+  display: block;
+  margin: 1em auto;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 608px) {
+  .social-media {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+  .btn-social i {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .social-media {
+    padding-left: 14em;
+    padding-right: 14em;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .footer-contact {
+    border: 0;
+    border-left: solid #FFFFFF;
+    border-right: solid #FFFFFF;
+  }
+  .social-media {
+    padding: 0;
   }
 }
 

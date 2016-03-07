@@ -228,7 +228,7 @@ body{
     @include btn-listen;
 }
 
-.press {
+.link {
     color: $white;
     &:hover {
         color: darken($white,20%);
@@ -361,8 +361,6 @@ body{
     .videos-content {
         padding: 0em;
     }
-    
-    
 }
 
 // -----ABOUT PAGE
@@ -370,10 +368,7 @@ body{
 .about-page-intro {
     background-color: $grey;
     margin-top: 0.18em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     
 }
 
@@ -422,6 +417,188 @@ body{
     .two-column {
         column-count: 2;
         column-gap: 40px;
+    }
+}
+
+// -----DONATE PAGE
+
+.gift {
+    padding: 1em;
+    background-color: $grey; 
+}
+
+.donate-banner {
+    display: block;
+    width: 100%;
+    z-index: 0;
+    margin-top: 0.18em;
+}
+
+.donate-banner-text {
+    color:$white;
+    z-index: 100;
+    position: absolute;
+}
+
+.billing-info {
+    padding: 1em;
+    background-color: $dark-green; 
+    color: $white;
+}
+
+.donate-contact li {
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 700px) {
+    .gift {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+    
+    .billing-info {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .gift {
+        padding-left: 14em;
+        padding-right: 14em;
+    
+    }
+    
+    .billing-info {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+}
+
+// --- DONATE PAGE - FORM
+
+.width {
+    width: 100%;
+    height: 3em;
+    outline: solid 1px $grey;
+    border-style: none;
+    margin-bottom: 0.5em;
+}
+
+.width:focus {
+	outline: 3px solid $orange;
+}
+
+.form-title {
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    
+}
+
+.side-form {
+	position: relative;
+    padding-bottom: 4em;
+}
+
+.form-block {
+    display: block;
+}
+
+input[type="email-donate"]{
+    width: 100%;
+}
+
+.text-area {
+    width: 100%;
+}
+
+.btn-submit {
+    @include btn-submit;
+}
+
+
+// ------ CAMPAIGN DIRECTORY PAGE
+    
+.campaign-directory-banner {
+    display: block;
+    width: 100%;
+    z-index: 0;
+    margin-top: 0.18em;
+}
+
+.campaign-banner-text {
+    color:$white;
+    z-index: 100;
+    position: absolute;
+}
+
+.two-column-always {
+        column-count: 2;
+        column-gap: 40px;
+}
+
+.endangered-species {
+    padding: 1em;
+    background-color: $grey;
+}
+
+.climate-law {
+    color: $white;
+    padding: 1em;
+    background-color: $dark-green;
+}
+
+.oceans {
+    padding: 1em;
+    background-color: $dark-blue; 
+    color: $white;
+}
+
+.population {
+    padding: 1em;
+    background-color: $dark-orange; 
+    color: $white;
+}
+
+.public-lands {
+    padding: 1em;
+    background-color: $grey; 
+    color: $black;
+}
+
+.environmental-health {
+    padding: 1em;
+    background-color: $dark-green; 
+    color: $white;
+}
+
+@media only screen and (min-width: 700px) {
+    .endangered-species {
+        padding: 4em;
+    }
+    
+    .climate-law {
+        padding: 4em;
+    }
+    
+    .oceans {
+        padding: 4em;
+    }
+    
+    .population {
+        padding: 4em; 
+    }
+    
+    .public-lands {
+        padding: 4em; 
+    }
+    
+    .environmental-health {
+        padding: 4em; 
     }
 }
 
@@ -530,6 +707,10 @@ input[placeholder="Enter Your Email"]{
         padding-left: 6em;
         padding-right: 6em;
     }
+    
+    .btn-social i {
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -550,89 +731,3 @@ input[placeholder="Enter Your Email"]{
         padding: 0;
     }
 }
-    
-
-
-// ------ CAMPAIGN DIRECTORY PAGE
-    
-.campaign-directory-banner {
-    display: block;
-    width: 100%;
-    z-index: 0;
-    margin-top: 0.18em;
-}
-
-.campaign-banner-text {
-    color:$white;
-    z-index: 100;
-    position: absolute;
-}
-
-.two-column-always {
-        column-count: 2;
-        column-gap: 40px;
-}
-
-.endangered-species {
-    padding: 1em;
-    background-color: $grey;
-}
-
-.climate-law {
-    color: $white;
-    padding: 1em;
-    background-color: $dark-green;
-}
-
-.oceans {
-    padding: 1em;
-    background-color: $dark-blue; 
-    color: $white;
-}
-
-.population {
-    padding: 1em;
-    background-color: $dark-orange; 
-    color: $white;
-}
-
-.public-lands {
-    padding: 1em;
-    background-color: $grey; 
-    color: $black;
-}
-
-.environmental-health {
-    padding: 1em;
-    background-color: $dark-green; 
-    color: $white;
-}
-
-@media only screen and (min-width: 700px) {
-    .endangered-species {
-        padding: 4em;
-    }
-    
-    .climate-law {
-        padding: 4em;
-    }
-    
-    .oceans {
-        padding: 4em;
-    }
-    
-    .population {
-        padding: 4em; 
-    }
-    
-    .public-lands {
-        padding: 4em; 
-    }
-    
-    .environmental-health {
-        padding: 4em; 
-    }
-}
-
-
-
